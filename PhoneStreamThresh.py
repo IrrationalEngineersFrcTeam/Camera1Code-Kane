@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture("http://192.168.1.201:8080/video")
+cap = cv2.VideoCapture("http://192.168.1.177:1181/video")
 
 while(True):
 
