@@ -8,7 +8,8 @@ from grip import GripPipeline
 
 grip = GripPipeline()
 
-cap = cv2.VideoCapture("http://192.168.2.2:1181/stream.mjpg")
+cap = cv2.VideoCapture("http://10.62.39.42:1181/stream.mjpg")
+
 blank_image = np.zeros((480, 640, 3), np.uint8)
 
 contoursImg = None
@@ -16,9 +17,8 @@ contoursImg = None
 logging.basicConfig(level=logging.DEBUG)
 
 NetworkTables.initialize(server='roborio-6239-frc.local')
-rp = NetworkTables.getTable("RaspberryPi")
 
-rp.putBoolean("test", True)
+rp = NetworkTables.getTable("RaspberryPi")
 
 def drawRectangle(contour_output, contour_hierarchy, source0):
 
@@ -38,7 +38,7 @@ def drawRectangle(contour_output, contour_hierarchy, source0):
             cv2.rectangle(source0, (min_x, min_y), (max_x, max_y), (255, 0, 0), 2)
             cv2.circle(source0, (int(x+(w/2)), int(y+(h/2))), 10, (0, 255, 0))
 
-    return source0
+    return (x+(w/2))
 
 def drawRectangleBetter(cnt, img):
     rect = cv2.minAreaRect(img)
@@ -53,11 +53,13 @@ while True:
 
     cv2.drawContours(blank_image, grip.find_contours_output, cv2.FILLED, [0, 0, 255], 2)
 
-    drawRectangle(grip.filter_contours_output, grip.contour_hierarchy, contoursImg)
+    circleXCenter = drawRectangle(grip.filter_contours_output, grip.contour_hierarchy, contoursImg)
 
     cv2.imshow("source", frame)
     cv2.imshow("rectangle", contoursImg)
     #cv2.imshow("frame", blank_image)
+
+    rp.putNumber("distance", circleXCenter)
 
     if cv2.waitKey(1) & 0xFF == ord(' '):
         break
