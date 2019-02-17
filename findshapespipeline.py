@@ -12,9 +12,9 @@ class GripPipeline:
         """initializes all values to presets or None if need to be set
         """
 
-        self.__hsv_threshold_hue = [0.0, 180.0]
+        self.__hsv_threshold_hue = [76.07913669064747, 180.0]
         self.__hsv_threshold_saturation = [0.0, 255.0]
-        self.__hsv_threshold_value = [215.55755395683454, 255.0]
+        self.__hsv_threshold_value = [119.24460431654677, 255.0]
 
         self.hsv_threshold_output = None
 
@@ -85,7 +85,7 @@ class GripPipeline:
         else:
             mode = cv2.RETR_LIST
         method = cv2.CHAIN_APPROX_SIMPLE
-        img, contours, hierarchy =cv2.findContours(input, mode=mode, method=method)
+        contours, hierarchy =cv2.findContours(input, mode=mode, method=method)
         return contours, hierarchy
 
     @staticmethod
@@ -132,6 +132,5 @@ class GripPipeline:
                 continue
             output.append(contour)
         return output
-
 
 
