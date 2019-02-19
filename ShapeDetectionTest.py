@@ -21,12 +21,12 @@ class Driver:
         self.blank_image = np.zeros((480, 640, 3), np.uint8)
         self.contoursImg = None
         self.shapeImg = None
-        self.centers = None
+        self.centers = None                                                                                                     
         self.frame = None
         self.contoursImg = None
 
         #set up camera stream
-        self.cap = cv2.VideoCapture("http://192.168.1.201:8080/video")
+        self.cap = cv2.VideoCapture("http://10.62.39.55:1181/stream.mjpg")
 
         #start the logging and set the level
         logging.basicConfig(level=logging.DEBUG)
@@ -127,13 +127,14 @@ class Driver:
 
             #circleXCenter = (circleXCenter - 320) / 3.2
             #self.rp.putNumber("distance", circleXCenter)
-            self.centers = np.zeros([2, 2])
+            #self.centers = np.zeros([2, 2])
             num = 0
 
             for contour in grip.filter_contours_output:
                 shape = self.shapeDetect.detect(contour)
                 #TODO make sure this works \/
-                #self.centers = np.zeros([grip.filter_contours_output.__len__, 2])
+                print(len(grip.filter_contours_output))
+                self.centers = np.zeros([int(len(grip.filter_contours_output)), 2])
                 print(shape)
                 M = cv2.moments(contour)
                 
@@ -155,7 +156,9 @@ class Driver:
 
 if __name__ == "__main__":
     driver = Driver()
-    if False:
+    driver.runCameraStream()
+
+    """if True:
         driver.runSingleImg()
     else:
-        driver.runCameraStream()
+        driver.runCameraStream()"""
