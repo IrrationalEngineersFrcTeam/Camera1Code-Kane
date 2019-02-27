@@ -26,7 +26,7 @@ class Driver:
         self.contoursImg = None
 
         #set up camera stream
-        self.cap = cv2.VideoCapture("http://10.62.39.55:1181/stream.mjpg")
+        self.cap = cv2.VideoCapture("http://10.62.39.12:1181/stream.mjpg")
 
         #start the logging and set the level
         logging.basicConfig(level=logging.DEBUG)
@@ -111,47 +111,54 @@ class Driver:
     """
     def runCameraStream(self):
         while True:
-            ret, self.frame = self.cap.read()
-            resized = imutils.resize(self.frame, width=480)
-            ratio = self.frame.shape[0] / float(resized.shape[0])
-            self.contoursImg = resized.copy()
-            grip.process(self.contoursImg)
-            #cv2.imshow("thresh", grip.hsv_threshold_output)
+            try:
+                ret, self.frame = self.cap.read()
+                resized = imutils.resize(self.frame, width=480)
+                ratio = self.frame.shape[0] / float(resized.shape[0])
+                self.contoursImg = resized.copy()
+                grip.process(self.contoursImg)
+                #cv2.imshow("thresh", grip.hsv_threshold_output)
 
-            self.shapeImg = self.contoursImg.copy()
+                self.shapeImg = self.contoursImg.copy()
 
-            #circleXCenter = self.drawRectangle(grip.filter_contours_output, grip.contour_hierarchy, self.contoursImg)
+                #circleXCenter = self.drawRectangle(grip.filter_contours_output, grip.contour_hierarchy, self.contoursImg)
 
-            cv2.imshow("rectangle", self.contoursImg)
-            cv2.imshow("thresh", grip.hsv_threshold_output)
+                cv2.imshow("rectangle", self.contoursImg)
+                cv2.imshow("thresh", grip.hsv_threshold_output)
 
-            #circleXCenter = (circleXCenter - 320) / 3.2
-            #self.rp.putNumber("distance", circleXCenter)
-            #self.centers = np.zeros([2, 2])
-            num = 0
+                #circleXCenter = (circleXCenter - 320) / 3.2
+                #self.rp.putNumber("distance", circleXCenter)
+                #self.centers = np.zeros([2, 2])
+                num = 0
+                if grip.filter_contours_output is None:
+                    raise ValueError
+                for contour in grip.filter_contours_output:
+                    shape = self.shapeDetect.detect(contour)
+                    #TODO make sure this works \/
+                    print(len(grip.filter_contours_output))
+                    self.centers = np.zeros([int(len(grip.filter_contours_output)), 2])
+                    print(shape)
+                    M = cv2.moments(contour)
+                    
+                    if shape == "rectangle":
+                        cX = int((M["m10"] / M["m00"]) * ratio)
+                        cY = int((M["m01"] / M["m00"]) * ratio)
+                        self.centers[num, 0] = cX
+                        self.centers[num, 1] = cY
+                        print(num, self.centers[num])
+                        self.drawRectangleBetter(self.shapeImg, contour)
+                    num += 1
 
-            for contour in grip.filter_contours_output:
-                shape = self.shapeDetect.detect(contour)
-                #TODO make sure this works \/
-                print(len(grip.filter_contours_output))
-                self.centers = np.zeros([int(len(grip.filter_contours_output)), 2])
-                print(shape)
-                M = cv2.moments(contour)
-                
-                if shape == "rectangle":
-                    cX = int((M["m10"] / M["m00"]) * ratio)
-                    cY = int((M["m01"] / M["m00"]) * ratio)
-                    self.centers[num, 0] = cX
-                    self.centers[num, 1] = cY
-                    print(num, self.centers[num])
-                    self.drawRectangleBetter(self.shapeImg, contour)
-                num += 1
+                cv2.imshow("shapes", self.shapeImg)
+                #cv2.waitKey(0)
+            
+                if cv2.waitKey(1) & 0xFF == ord(' '):
+                    break
 
-            cv2.imshow("shapes", self.shapeImg)
-            #cv2.waitKey(0)
-        
-            if cv2.waitKey(1) & 0xFF == ord(' '):
-                break
+            except ValueError:
+                print("Filter contours empty")
+                if cv2.waitKey(1) & 0xFF == ord(' '):
+                    break
     
 
 if __name__ == "__main__":
