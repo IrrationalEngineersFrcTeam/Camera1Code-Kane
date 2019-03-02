@@ -11,10 +11,10 @@ class GripPipeline:
     def __init__(self):
         """initializes all values to presets or None if need to be set
         """
-        #TODO change values to work with vision tape
+
         self.__hsv_threshold_hue = [22.66187050359711, 112.42320819112628]
         self.__hsv_threshold_saturation = [0.0, 54.829351535836174]
-        self.__hsv_threshold_value = [200.33093525179854, 250.0]
+        self.__hsv_threshold_value = [251.33093525179854, 255.0]
 
         self.hsv_threshold_output = None
 
@@ -25,20 +25,19 @@ class GripPipeline:
 
         self.__filter_contours_contours = self.find_contours_output
         self.__filter_contours_min_area = 1000.0
-        self.__filter_contours_min_perimeter = 0
-        self.__filter_contours_min_width = 0
-        self.__filter_contours_max_width = 1000
-        self.__filter_contours_min_height = 0
-        self.__filter_contours_max_height = 1000
-        self.__filter_contours_solidity = [0, 100]
-        self.__filter_contours_max_vertices = 1000000
-        self.__filter_contours_min_vertices = 0
-        self.__filter_contours_min_ratio = 0
-        self.__filter_contours_max_ratio = 1000
+        self.__filter_contours_min_perimeter = 0.0
+        self.__filter_contours_min_width = 0.0
+        self.__filter_contours_max_width = 1000.0
+        self.__filter_contours_min_height = 0.0
+        self.__filter_contours_max_height = 1000.0
+        self.__filter_contours_solidity = [0.0, 100.0]
+        self.__filter_contours_max_vertices = 1000000.0
+        self.__filter_contours_min_vertices = 0.0
+        self.__filter_contours_min_ratio = 0.0
+        self.__filter_contours_max_ratio = 1000.0
 
         self.filter_contours_output = None
 
-        self.contour_hierarchy = None
 
     def process(self, source0):
         """
@@ -50,7 +49,7 @@ class GripPipeline:
 
         # Step Find_Contours0:
         self.__find_contours_input = self.hsv_threshold_output
-        (self.find_contours_output, self.contour_hierarchy) = self.__find_contours(self.__find_contours_input, self.__find_contours_external_only)
+        (self.find_contours_output) = self.__find_contours(self.__find_contours_input, self.__find_contours_external_only)
 
         # Step Filter_Contours0:
         self.__filter_contours_contours = self.find_contours_output
@@ -85,8 +84,8 @@ class GripPipeline:
         else:
             mode = cv2.RETR_LIST
         method = cv2.CHAIN_APPROX_SIMPLE
-        contours, hierarchy =cv2.findContours(input, mode=mode, method=method)
-        return contours, hierarchy
+        im2, contours, hierarchy =cv2.findContours(input, mode=mode, method=method)
+        return contours
 
     @staticmethod
     def __filter_contours(input_contours, min_area, min_perimeter, min_width, max_width,
@@ -132,5 +131,6 @@ class GripPipeline:
                 continue
             output.append(contour)
         return output
+
 
 

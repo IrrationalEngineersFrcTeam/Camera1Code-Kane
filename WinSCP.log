@@ -562,3 +562,1869 @@
 . 2019-02-26 19:24:17.455 Closing connection.
 . 2019-02-26 19:24:17.455 Sending special code: 12
 . 2019-02-26 19:24:17.455 Sent EOF message
+. 2019-03-01 21:10:29.316 --------------------------------------------------------------------------
+. 2019-03-01 21:10:29.328 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:10:29.328 Configuration: nul
+. 2019-03-01 21:10:29.328 Log level: Normal
+. 2019-03-01 21:10:29.328 Local account: MSI\kthsd_0
+. 2019-03-01 21:10:29.328 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:10:29.328 Process ID: 18948
+. 2019-03-01 21:10:29.329 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_3532_601 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:10:29.329 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:10:29.329 Login time: Friday, March 1, 2019 9:10:29 PM
+. 2019-03-01 21:10:29.329 --------------------------------------------------------------------------
+. 2019-03-01 21:10:29.329 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:10:29.329 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:10:29.329 --------------------------------------------------------------------------
+. 2019-03-01 21:10:29.329 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:10:29.329 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:10:29.329 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:10:29.329 Tunnel: No
+. 2019-03-01 21:10:29.329 Transfer Protocol: SFTP
+. 2019-03-01 21:10:29.329 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:10:29.329 Disable Nagle: No
+. 2019-03-01 21:10:29.329 Proxy: None
+. 2019-03-01 21:10:29.329 Send buffer: 262144
+. 2019-03-01 21:10:29.329 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:10:29.329 Bypass authentication: No
+. 2019-03-01 21:10:29.329 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:10:29.329 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:10:29.329 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:10:29.329 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:10:29.329 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:10:29.329 Simple channel: Yes
+. 2019-03-01 21:10:29.329 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:10:29.329 Shell: default
+. 2019-03-01 21:10:29.329 EOL: LF, UTF: Auto
+. 2019-03-01 21:10:29.329 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:10:29.329 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:10:29.329 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:10:29.329 SFTP Server: default
+. 2019-03-01 21:10:29.330 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:10:29.330 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:10:29.330 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:10:29.330 DST mode: Unix
+. 2019-03-01 21:10:29.330 --------------------------------------------------------------------------
+. 2019-03-01 21:10:29.330 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:10:29.330 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:10:29.339 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:10:29.417 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:10:29.418 Using SSH protocol version 2
+. 2019-03-01 21:10:29.418 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:10:29.421 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:10:29.858 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:10:29.859 Host key fingerprint is:
+. 2019-03-01 21:10:29.859 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:10:29.860 Host key matches configured key
+. 2019-03-01 21:10:29.860 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:10:29.860 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:10:29.860 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:10:29.860 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:10:29.871 Using username "pi".
+. 2019-03-01 21:10:29.876 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:10:29.876 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:10:29.876 Using stored password.
+. 2019-03-01 21:10:29.877 Sent password
+. 2019-03-01 21:10:30.088 Access granted
+. 2019-03-01 21:10:30.088 Opening session as main channel
+. 2019-03-01 21:10:30.293 Opened main channel
+. 2019-03-01 21:10:30.302 Started a shell/command
+. 2019-03-01 21:10:30.302 --------------------------------------------------------------------------
+. 2019-03-01 21:10:30.302 Using SFTP protocol.
+. 2019-03-01 21:10:30.302 Doing startup conversation with host.
+> 2019-03-01 21:10:30.303 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:10:30.337 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:10:30.337 SFTP version 3 negotiated.
+. 2019-03-01 21:10:30.337 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:10:30.337 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:10:30.337 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:10:30.337 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:10:30.337 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:10:30.337 We believe the server has signed timestamps bug
+. 2019-03-01 21:10:30.337 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:10:30.337 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:10:30.337 Getting current directory name.
+. 2019-03-01 21:10:30.337 Getting real path for '.'
+> 2019-03-01 21:10:30.337 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:10:30.343 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:10:30.343 Real path is '/home/pi'
+. 2019-03-01 21:10:30.343 Startup conversation with host finished.
+< 2019-03-01 21:10:30.344 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:10:30.344 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:10:30.344 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,406
+. 2019-03-01 21:10:30.344   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:10:30.344   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:10:30.344   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:10:30.344 Getting real path for '/home/pi'
+> 2019-03-01 21:10:30.344 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:10:30.347 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:10:30.347 Real path is '/home/pi'
+. 2019-03-01 21:10:30.347 File: 'ShapeDetectionTest.py' [2019-03-02T00:58:50.366Z] [7406]
+. 2019-03-01 21:10:30.347 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:10:30.347 Binary transfer mode selected.
+. 2019-03-01 21:10:30.347 Opening remote file.
+> 2019-03-01 21:10:30.347 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:10:30.350 Type: SSH_FXP_STATUS, Size: 24, Number: 515
+< 2019-03-01 21:10:30.350 Status code: 4, Message: 515, Server: Failure, Language:  
+> 2019-03-01 21:10:30.351 Type: SSH_FXP_LSTAT, Size: 39, Number: 775
+< 2019-03-01 21:10:30.354 Type: SSH_FXP_ATTRS, Size: 37, Number: 775
+* 2019-03-01 21:10:30.355 (ETerminal) General failure (server should provide error description).
+* 2019-03-01 21:10:30.355 Error code: 4
+* 2019-03-01 21:10:30.355 Error message from server: Failure
+* 2019-03-01 21:10:30.355 
+* 2019-03-01 21:10:30.355 Common reasons for the Error code 4 are:
+* 2019-03-01 21:10:30.355 - Renaming a file to a name of already existing file.
+* 2019-03-01 21:10:30.355 - Creating a directory that already exists.
+* 2019-03-01 21:10:30.355 - Moving a remote file to a different filesystem (HDD).
+* 2019-03-01 21:10:30.355 - Uploading a file to a full filesystem (HDD).
+* 2019-03-01 21:10:30.355 - Exceeding a user disk quota.
+. 2019-03-01 21:10:30.355 Asking user:
+. 2019-03-01 21:10:30.355 Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.$$
+. 2019-03-01 21:10:30.355  
+. 2019-03-01 21:10:30.355 Press 'Delete' to delete the file and create new one instead of overwriting it.$$ ("General failure (server should provide error description).
+. 2019-03-01 21:10:30.355 Error code: 4
+. 2019-03-01 21:10:30.355 Error message from server: Failure
+. 2019-03-01 21:10:30.355 
+. 2019-03-01 21:10:30.355 Common reasons for the Error code 4 are:
+. 2019-03-01 21:10:30.355 - Renaming a file to a name of already existing file.
+. 2019-03-01 21:10:30.355 - Creating a directory that already exists.
+. 2019-03-01 21:10:30.355 - Moving a remote file to a different filesystem (HDD).
+. 2019-03-01 21:10:30.355 - Uploading a file to a full filesystem (HDD).
+. 2019-03-01 21:10:30.355 - Exceeding a user disk quota.")
+< 2019-03-01 21:10:30.355 Script: Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.
+< 2019-03-01 21:10:30.355 Script: General failure (server should provide error description).
+< 2019-03-01 21:10:30.355 Error code: 4
+< 2019-03-01 21:10:30.355 Error message from server: Failure
+< 2019-03-01 21:10:30.356 Common reasons for the Error code 4 are:
+< 2019-03-01 21:10:30.356 - Renaming a file to a name of already existing file.
+< 2019-03-01 21:10:30.356 - Creating a directory that already exists.
+< 2019-03-01 21:10:30.356 - Moving a remote file to a different filesystem (HDD).
+< 2019-03-01 21:10:30.356 - Uploading a file to a full filesystem (HDD).
+< 2019-03-01 21:10:30.356 - Exceeding a user disk quota.
+* 2019-03-01 21:10:30.357 (ESkipFile) Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.$$
+* 2019-03-01 21:10:30.357  
+* 2019-03-01 21:10:30.357 Press 'Delete' to delete the file and create new one instead of overwriting it.$$
+* 2019-03-01 21:10:30.357 General failure (server should provide error description).
+* 2019-03-01 21:10:30.357 Error code: 4
+* 2019-03-01 21:10:30.357 Error message from server: Failure
+* 2019-03-01 21:10:30.357 
+* 2019-03-01 21:10:30.357 Common reasons for the Error code 4 are:
+* 2019-03-01 21:10:30.357 - Renaming a file to a name of already existing file.
+* 2019-03-01 21:10:30.357 - Creating a directory that already exists.
+* 2019-03-01 21:10:30.357 - Moving a remote file to a different filesystem (HDD).
+* 2019-03-01 21:10:30.357 - Uploading a file to a full filesystem (HDD).
+* 2019-03-01 21:10:30.357 - Exceeding a user disk quota.
+. 2019-03-01 21:10:30.357 Copying finished: Transferred: 0, Elapsed: 0:00:00, CPS: 0/s
+. 2019-03-01 21:10:30.358 Script: Failed
+. 2019-03-01 21:10:30.358 Script: Exit code: 1
+. 2019-03-01 21:10:30.358 Closing connection.
+. 2019-03-01 21:10:30.358 Sending special code: 12
+. 2019-03-01 21:10:30.358 Sent EOF message
+. 2019-03-01 21:11:15.971 --------------------------------------------------------------------------
+. 2019-03-01 21:11:15.971 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:11:15.971 Configuration: nul
+. 2019-03-01 21:11:15.971 Log level: Normal
+. 2019-03-01 21:11:15.971 Local account: MSI\kthsd_0
+. 2019-03-01 21:11:15.971 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:11:15.971 Process ID: 23060
+. 2019-03-01 21:11:15.972 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_20852_266 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:11:15.972 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:11:15.972 Login time: Friday, March 1, 2019 9:11:15 PM
+. 2019-03-01 21:11:15.972 --------------------------------------------------------------------------
+. 2019-03-01 21:11:15.972 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:11:15.972 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:11:15.972 --------------------------------------------------------------------------
+. 2019-03-01 21:11:15.972 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:11:15.972 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:11:15.972 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:11:15.972 Tunnel: No
+. 2019-03-01 21:11:15.972 Transfer Protocol: SFTP
+. 2019-03-01 21:11:15.972 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:11:15.972 Disable Nagle: No
+. 2019-03-01 21:11:15.972 Proxy: None
+. 2019-03-01 21:11:15.972 Send buffer: 262144
+. 2019-03-01 21:11:15.972 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:11:15.972 Bypass authentication: No
+. 2019-03-01 21:11:15.972 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:11:15.972 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:11:15.972 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:11:15.972 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:11:15.972 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:11:15.972 Simple channel: Yes
+. 2019-03-01 21:11:15.972 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:11:15.972 Shell: default
+. 2019-03-01 21:11:15.972 EOL: LF, UTF: Auto
+. 2019-03-01 21:11:15.972 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:11:15.972 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:11:15.972 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:11:15.972 SFTP Server: default
+. 2019-03-01 21:11:15.972 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:11:15.972 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:11:15.972 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:11:15.972 DST mode: Unix
+. 2019-03-01 21:11:15.972 --------------------------------------------------------------------------
+. 2019-03-01 21:11:15.973 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:11:15.973 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:11:15.976 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:11:16.050 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:11:16.050 Using SSH protocol version 2
+. 2019-03-01 21:11:16.050 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:11:16.054 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:11:16.452 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:11:16.453 Host key fingerprint is:
+. 2019-03-01 21:11:16.453 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:11:16.454 Host key matches configured key
+. 2019-03-01 21:11:16.454 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:11:16.454 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:11:16.454 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:11:16.454 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:11:16.464 Using username "pi".
+. 2019-03-01 21:11:16.470 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:11:16.470 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:11:16.470 Using stored password.
+. 2019-03-01 21:11:16.471 Sent password
+. 2019-03-01 21:11:16.684 Access granted
+. 2019-03-01 21:11:16.684 Opening session as main channel
+. 2019-03-01 21:11:16.895 Opened main channel
+. 2019-03-01 21:11:16.907 Started a shell/command
+. 2019-03-01 21:11:16.907 --------------------------------------------------------------------------
+. 2019-03-01 21:11:16.908 Using SFTP protocol.
+. 2019-03-01 21:11:16.908 Doing startup conversation with host.
+> 2019-03-01 21:11:16.908 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:11:16.923 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:11:16.923 SFTP version 3 negotiated.
+. 2019-03-01 21:11:16.923 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:11:16.923 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:11:16.923 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:11:16.923 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:11:16.923 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:11:16.923 We believe the server has signed timestamps bug
+. 2019-03-01 21:11:16.923 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:11:16.923 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:11:16.923 Getting current directory name.
+. 2019-03-01 21:11:16.923 Getting real path for '.'
+> 2019-03-01 21:11:16.923 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:11:16.931 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:11:16.931 Real path is '/home/pi'
+. 2019-03-01 21:11:16.931 Startup conversation with host finished.
+< 2019-03-01 21:11:16.931 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:11:16.933 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:11:16.933 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-01 21:11:16.933   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:11:16.933   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:11:16.933   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:11:16.933 Getting real path for '/home/pi'
+> 2019-03-01 21:11:16.933 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:11:16.937 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:11:16.937 Real path is '/home/pi'
+. 2019-03-01 21:11:16.937 File: 'ShapeDetectionTest.py' [2019-03-02T02:11:12.534Z] [7447]
+. 2019-03-01 21:11:16.938 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:11:16.938 Binary transfer mode selected.
+. 2019-03-01 21:11:16.938 Opening remote file.
+> 2019-03-01 21:11:16.938 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:11:16.947 Type: SSH_FXP_STATUS, Size: 24, Number: 515
+< 2019-03-01 21:11:16.947 Status code: 4, Message: 515, Server: Failure, Language:  
+> 2019-03-01 21:11:16.947 Type: SSH_FXP_LSTAT, Size: 39, Number: 775
+< 2019-03-01 21:11:16.953 Type: SSH_FXP_ATTRS, Size: 37, Number: 775
+* 2019-03-01 21:11:16.953 (ETerminal) General failure (server should provide error description).
+* 2019-03-01 21:11:16.953 Error code: 4
+* 2019-03-01 21:11:16.953 Error message from server: Failure
+* 2019-03-01 21:11:16.953 
+* 2019-03-01 21:11:16.953 Common reasons for the Error code 4 are:
+* 2019-03-01 21:11:16.953 - Renaming a file to a name of already existing file.
+* 2019-03-01 21:11:16.953 - Creating a directory that already exists.
+* 2019-03-01 21:11:16.953 - Moving a remote file to a different filesystem (HDD).
+* 2019-03-01 21:11:16.953 - Uploading a file to a full filesystem (HDD).
+* 2019-03-01 21:11:16.953 - Exceeding a user disk quota.
+. 2019-03-01 21:11:16.953 Asking user:
+. 2019-03-01 21:11:16.953 Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.$$
+. 2019-03-01 21:11:16.953  
+. 2019-03-01 21:11:16.953 Press 'Delete' to delete the file and create new one instead of overwriting it.$$ ("General failure (server should provide error description).
+. 2019-03-01 21:11:16.953 Error code: 4
+. 2019-03-01 21:11:16.953 Error message from server: Failure
+. 2019-03-01 21:11:16.953 
+. 2019-03-01 21:11:16.953 Common reasons for the Error code 4 are:
+. 2019-03-01 21:11:16.953 - Renaming a file to a name of already existing file.
+. 2019-03-01 21:11:16.953 - Creating a directory that already exists.
+. 2019-03-01 21:11:16.953 - Moving a remote file to a different filesystem (HDD).
+. 2019-03-01 21:11:16.953 - Uploading a file to a full filesystem (HDD).
+. 2019-03-01 21:11:16.953 - Exceeding a user disk quota.")
+< 2019-03-01 21:11:16.953 Script: Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.
+< 2019-03-01 21:11:16.953 Script: General failure (server should provide error description).
+< 2019-03-01 21:11:16.953 Error code: 4
+< 2019-03-01 21:11:16.953 Error message from server: Failure
+< 2019-03-01 21:11:16.953 Common reasons for the Error code 4 are:
+< 2019-03-01 21:11:16.953 - Renaming a file to a name of already existing file.
+< 2019-03-01 21:11:16.953 - Creating a directory that already exists.
+< 2019-03-01 21:11:16.953 - Moving a remote file to a different filesystem (HDD).
+< 2019-03-01 21:11:16.953 - Uploading a file to a full filesystem (HDD).
+< 2019-03-01 21:11:16.953 - Exceeding a user disk quota.
+* 2019-03-01 21:11:16.954 (ESkipFile) Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.$$
+* 2019-03-01 21:11:16.954  
+* 2019-03-01 21:11:16.954 Press 'Delete' to delete the file and create new one instead of overwriting it.$$
+* 2019-03-01 21:11:16.954 General failure (server should provide error description).
+* 2019-03-01 21:11:16.954 Error code: 4
+* 2019-03-01 21:11:16.954 Error message from server: Failure
+* 2019-03-01 21:11:16.954 
+* 2019-03-01 21:11:16.954 Common reasons for the Error code 4 are:
+* 2019-03-01 21:11:16.954 - Renaming a file to a name of already existing file.
+* 2019-03-01 21:11:16.954 - Creating a directory that already exists.
+* 2019-03-01 21:11:16.954 - Moving a remote file to a different filesystem (HDD).
+* 2019-03-01 21:11:16.954 - Uploading a file to a full filesystem (HDD).
+* 2019-03-01 21:11:16.954 - Exceeding a user disk quota.
+. 2019-03-01 21:11:16.954 Copying finished: Transferred: 0, Elapsed: 0:00:00, CPS: 0/s
+. 2019-03-01 21:11:16.954 Script: Failed
+. 2019-03-01 21:11:16.954 Script: Exit code: 1
+. 2019-03-01 21:11:16.954 Closing connection.
+. 2019-03-01 21:11:16.954 Sending special code: 12
+. 2019-03-01 21:11:16.954 Sent EOF message
+. 2019-03-01 21:14:45.166 --------------------------------------------------------------------------
+. 2019-03-01 21:14:45.167 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:14:45.167 Configuration: nul
+. 2019-03-01 21:14:45.167 Log level: Normal
+. 2019-03-01 21:14:45.167 Local account: MSI\kthsd_0
+. 2019-03-01 21:14:45.167 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:14:45.167 Process ID: 8844
+. 2019-03-01 21:14:45.168 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_15168_563 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:14:45.168 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:14:45.168 Login time: Friday, March 1, 2019 9:14:45 PM
+. 2019-03-01 21:14:45.168 --------------------------------------------------------------------------
+. 2019-03-01 21:14:45.168 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:14:45.168 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:14:45.168 --------------------------------------------------------------------------
+. 2019-03-01 21:14:45.168 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:14:45.168 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:14:45.168 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:14:45.168 Tunnel: No
+. 2019-03-01 21:14:45.168 Transfer Protocol: SFTP
+. 2019-03-01 21:14:45.168 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:14:45.168 Disable Nagle: No
+. 2019-03-01 21:14:45.168 Proxy: None
+. 2019-03-01 21:14:45.169 Send buffer: 262144
+. 2019-03-01 21:14:45.169 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:14:45.169 Bypass authentication: No
+. 2019-03-01 21:14:45.169 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:14:45.169 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:14:45.169 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:14:45.169 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:14:45.169 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:14:45.169 Simple channel: Yes
+. 2019-03-01 21:14:45.169 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:14:45.169 Shell: default
+. 2019-03-01 21:14:45.169 EOL: LF, UTF: Auto
+. 2019-03-01 21:14:45.169 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:14:45.169 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:14:45.169 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:14:45.169 SFTP Server: default
+. 2019-03-01 21:14:45.169 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:14:45.169 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:14:45.169 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:14:45.169 DST mode: Unix
+. 2019-03-01 21:14:45.169 --------------------------------------------------------------------------
+. 2019-03-01 21:14:45.169 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:14:45.169 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:14:45.173 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:14:45.251 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:14:45.251 Using SSH protocol version 2
+. 2019-03-01 21:14:45.251 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:14:45.258 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:14:45.672 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:14:45.674 Host key fingerprint is:
+. 2019-03-01 21:14:45.674 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:14:45.674 Host key matches configured key
+. 2019-03-01 21:14:45.674 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:14:45.674 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:14:45.674 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:14:45.674 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:14:45.726 Using username "pi".
+. 2019-03-01 21:14:45.731 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:14:45.731 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:14:45.731 Using stored password.
+. 2019-03-01 21:14:45.731 Sent password
+. 2019-03-01 21:14:45.951 Access granted
+. 2019-03-01 21:14:45.951 Opening session as main channel
+. 2019-03-01 21:14:46.161 Opened main channel
+. 2019-03-01 21:14:46.173 Started a shell/command
+. 2019-03-01 21:14:46.173 --------------------------------------------------------------------------
+. 2019-03-01 21:14:46.173 Using SFTP protocol.
+. 2019-03-01 21:14:46.173 Doing startup conversation with host.
+> 2019-03-01 21:14:46.174 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:14:46.183 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:14:46.184 SFTP version 3 negotiated.
+. 2019-03-01 21:14:46.184 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:14:46.184 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:14:46.184 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:14:46.184 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:14:46.184 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:14:46.184 We believe the server has signed timestamps bug
+. 2019-03-01 21:14:46.184 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:14:46.184 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:14:46.184 Getting current directory name.
+. 2019-03-01 21:14:46.184 Getting real path for '.'
+> 2019-03-01 21:14:46.184 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:14:46.187 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:14:46.187 Real path is '/home/pi'
+. 2019-03-01 21:14:46.187 Startup conversation with host finished.
+< 2019-03-01 21:14:46.188 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:14:46.188 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:14:46.189 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-01 21:14:46.189   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:14:46.189   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:14:46.189   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:14:46.189 Getting real path for '/home/pi'
+> 2019-03-01 21:14:46.189 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:14:46.194 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:14:46.194 Real path is '/home/pi'
+. 2019-03-01 21:14:46.194 File: 'ShapeDetectionTest.py' [2019-03-02T02:14:41.912Z] [7447]
+. 2019-03-01 21:14:46.194 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:14:46.194 Binary transfer mode selected.
+. 2019-03-01 21:14:46.194 Opening remote file.
+> 2019-03-01 21:14:46.194 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:14:46.203 Type: SSH_FXP_STATUS, Size: 24, Number: 515
+< 2019-03-01 21:14:46.203 Status code: 4, Message: 515, Server: Failure, Language:  
+> 2019-03-01 21:14:46.203 Type: SSH_FXP_LSTAT, Size: 39, Number: 775
+< 2019-03-01 21:14:46.207 Type: SSH_FXP_ATTRS, Size: 37, Number: 775
+* 2019-03-01 21:14:46.207 (ETerminal) General failure (server should provide error description).
+* 2019-03-01 21:14:46.207 Error code: 4
+* 2019-03-01 21:14:46.207 Error message from server: Failure
+* 2019-03-01 21:14:46.207 
+* 2019-03-01 21:14:46.207 Common reasons for the Error code 4 are:
+* 2019-03-01 21:14:46.207 - Renaming a file to a name of already existing file.
+* 2019-03-01 21:14:46.207 - Creating a directory that already exists.
+* 2019-03-01 21:14:46.207 - Moving a remote file to a different filesystem (HDD).
+* 2019-03-01 21:14:46.207 - Uploading a file to a full filesystem (HDD).
+* 2019-03-01 21:14:46.207 - Exceeding a user disk quota.
+. 2019-03-01 21:14:46.207 Asking user:
+. 2019-03-01 21:14:46.207 Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.$$
+. 2019-03-01 21:14:46.207  
+. 2019-03-01 21:14:46.207 Press 'Delete' to delete the file and create new one instead of overwriting it.$$ ("General failure (server should provide error description).
+. 2019-03-01 21:14:46.207 Error code: 4
+. 2019-03-01 21:14:46.207 Error message from server: Failure
+. 2019-03-01 21:14:46.207 
+. 2019-03-01 21:14:46.207 Common reasons for the Error code 4 are:
+. 2019-03-01 21:14:46.207 - Renaming a file to a name of already existing file.
+. 2019-03-01 21:14:46.207 - Creating a directory that already exists.
+. 2019-03-01 21:14:46.207 - Moving a remote file to a different filesystem (HDD).
+. 2019-03-01 21:14:46.207 - Uploading a file to a full filesystem (HDD).
+. 2019-03-01 21:14:46.207 - Exceeding a user disk quota.")
+< 2019-03-01 21:14:46.207 Script: Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.
+< 2019-03-01 21:14:46.207 Script: General failure (server should provide error description).
+< 2019-03-01 21:14:46.207 Error code: 4
+< 2019-03-01 21:14:46.207 Error message from server: Failure
+< 2019-03-01 21:14:46.207 Common reasons for the Error code 4 are:
+< 2019-03-01 21:14:46.207 - Renaming a file to a name of already existing file.
+< 2019-03-01 21:14:46.207 - Creating a directory that already exists.
+< 2019-03-01 21:14:46.207 - Moving a remote file to a different filesystem (HDD).
+< 2019-03-01 21:14:46.207 - Uploading a file to a full filesystem (HDD).
+< 2019-03-01 21:14:46.207 - Exceeding a user disk quota.
+* 2019-03-01 21:14:46.208 (ESkipFile) Cannot overwrite remote file '/home/pi/ShapeDetectionTest.py'.$$
+* 2019-03-01 21:14:46.208  
+* 2019-03-01 21:14:46.208 Press 'Delete' to delete the file and create new one instead of overwriting it.$$
+* 2019-03-01 21:14:46.208 General failure (server should provide error description).
+* 2019-03-01 21:14:46.208 Error code: 4
+* 2019-03-01 21:14:46.208 Error message from server: Failure
+* 2019-03-01 21:14:46.208 
+* 2019-03-01 21:14:46.208 Common reasons for the Error code 4 are:
+* 2019-03-01 21:14:46.208 - Renaming a file to a name of already existing file.
+* 2019-03-01 21:14:46.208 - Creating a directory that already exists.
+* 2019-03-01 21:14:46.208 - Moving a remote file to a different filesystem (HDD).
+* 2019-03-01 21:14:46.208 - Uploading a file to a full filesystem (HDD).
+* 2019-03-01 21:14:46.208 - Exceeding a user disk quota.
+. 2019-03-01 21:14:46.208 Copying finished: Transferred: 0, Elapsed: 0:00:00, CPS: 0/s
+. 2019-03-01 21:14:46.208 Script: Failed
+. 2019-03-01 21:14:46.208 Script: Exit code: 1
+. 2019-03-01 21:14:46.208 Closing connection.
+. 2019-03-01 21:14:46.208 Sending special code: 12
+. 2019-03-01 21:14:46.208 Sent EOF message
+. 2019-03-01 21:15:09.812 --------------------------------------------------------------------------
+. 2019-03-01 21:15:09.812 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:15:09.812 Configuration: nul
+. 2019-03-01 21:15:09.812 Log level: Normal
+. 2019-03-01 21:15:09.812 Local account: MSI\kthsd_0
+. 2019-03-01 21:15:09.812 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:15:09.812 Process ID: 6356
+. 2019-03-01 21:15:09.812 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_18632_823 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:15:09.812 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:15:09.813 Login time: Friday, March 1, 2019 9:15:09 PM
+. 2019-03-01 21:15:09.813 --------------------------------------------------------------------------
+. 2019-03-01 21:15:09.813 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:15:09.813 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:15:09.813 --------------------------------------------------------------------------
+. 2019-03-01 21:15:09.813 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:15:09.813 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:15:09.813 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:15:09.813 Tunnel: No
+. 2019-03-01 21:15:09.813 Transfer Protocol: SFTP
+. 2019-03-01 21:15:09.813 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:15:09.813 Disable Nagle: No
+. 2019-03-01 21:15:09.813 Proxy: None
+. 2019-03-01 21:15:09.813 Send buffer: 262144
+. 2019-03-01 21:15:09.813 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:15:09.813 Bypass authentication: No
+. 2019-03-01 21:15:09.813 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:15:09.813 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:15:09.813 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:15:09.813 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:15:09.813 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:15:09.813 Simple channel: Yes
+. 2019-03-01 21:15:09.813 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:15:09.813 Shell: default
+. 2019-03-01 21:15:09.813 EOL: LF, UTF: Auto
+. 2019-03-01 21:15:09.813 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:15:09.813 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:15:09.813 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:15:09.813 SFTP Server: default
+. 2019-03-01 21:15:09.813 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:15:09.813 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:15:09.813 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:15:09.813 DST mode: Unix
+. 2019-03-01 21:15:09.813 --------------------------------------------------------------------------
+. 2019-03-01 21:15:09.814 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:15:09.814 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:15:09.819 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:15:09.911 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:15:09.911 Using SSH protocol version 2
+. 2019-03-01 21:15:09.911 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:15:09.917 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:15:10.294 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:15:10.295 Host key fingerprint is:
+. 2019-03-01 21:15:10.295 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:15:10.296 Host key matches configured key
+. 2019-03-01 21:15:10.296 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:15:10.296 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:15:10.296 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:15:10.296 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:15:10.353 Using username "pi".
+. 2019-03-01 21:15:10.359 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:15:10.359 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:15:10.359 Using stored password.
+. 2019-03-01 21:15:10.359 Sent password
+. 2019-03-01 21:15:10.603 Access granted
+. 2019-03-01 21:15:10.603 Opening session as main channel
+. 2019-03-01 21:15:10.823 Opened main channel
+. 2019-03-01 21:15:10.833 Started a shell/command
+. 2019-03-01 21:15:10.834 --------------------------------------------------------------------------
+. 2019-03-01 21:15:10.834 Using SFTP protocol.
+. 2019-03-01 21:15:10.834 Doing startup conversation with host.
+> 2019-03-01 21:15:10.834 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:15:10.849 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:15:10.852 SFTP version 3 negotiated.
+. 2019-03-01 21:15:10.852 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:15:10.852 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:15:10.852 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:15:10.852 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:15:10.852 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:15:10.852 We believe the server has signed timestamps bug
+. 2019-03-01 21:15:10.852 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:15:10.852 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:15:10.852 Getting current directory name.
+. 2019-03-01 21:15:10.852 Getting real path for '.'
+> 2019-03-01 21:15:10.852 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:15:10.856 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:15:10.856 Real path is '/home/pi'
+. 2019-03-01 21:15:10.856 Startup conversation with host finished.
+< 2019-03-01 21:15:10.856 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:15:10.857 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:15:10.857 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-01 21:15:10.857   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:15:10.857   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:15:10.857   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:15:10.857 Getting real path for '/home/pi'
+> 2019-03-01 21:15:10.858 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:15:10.862 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:15:10.862 Real path is '/home/pi'
+. 2019-03-01 21:15:10.862 File: 'ShapeDetectionTest.py' [2019-03-02T02:14:41.912Z] [7447]
+. 2019-03-01 21:15:10.863 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:15:10.863 Binary transfer mode selected.
+. 2019-03-01 21:15:10.863 Opening remote file.
+> 2019-03-01 21:15:10.863 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:15:10.869 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-01 21:15:10.870 Type: SSH_FXP_WRITE, Size: 7472, Number: 1030
+> 2019-03-01 21:15:10.870 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-01 21:15:10.870 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-01 21:15:10.896 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-01 21:15:10.896 Status code: 0
+< 2019-03-01 21:15:10.898 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-01 21:15:10.898 Status code: 0
+. 2019-03-01 21:15:10.898 Preserving timestamp [2019-03-02T02:14:41.000Z]
+< 2019-03-01 21:15:10.899 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-01 21:15:10.899 Status code: 0
+. 2019-03-01 21:15:10.899 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7447]
+. 2019-03-01 21:15:10.899 Copying finished: Transferred: 7,447, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:15:10.899 Script: put findshapespipeline.py"
+. 2019-03-01 21:15:10.899 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-01 21:15:10.899   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:15:10.899   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:15:10.899   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:15:10.899 Getting real path for '/home/pi'
+> 2019-03-01 21:15:10.899 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-01 21:15:10.902 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-01 21:15:10.902 Real path is '/home/pi'
+. 2019-03-01 21:15:10.902 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-01 21:15:10.903 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-01 21:15:10.903 Binary transfer mode selected.
+. 2019-03-01 21:15:10.903 Opening remote file.
+> 2019-03-01 21:15:10.903 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-01 21:15:10.911 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-01 21:15:10.911 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-01 21:15:10.911 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-01 21:15:10.911 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-01 21:15:10.930 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-01 21:15:10.930 Status code: 0
+< 2019-03-01 21:15:10.932 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-01 21:15:10.932 Status code: 0
+. 2019-03-01 21:15:10.932 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-01 21:15:10.932 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-01 21:15:10.932 Status code: 0
+. 2019-03-01 21:15:10.932 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-01 21:15:10.932 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:15:10.932 Script: put ShapeDetector.py"
+. 2019-03-01 21:15:10.933 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-01 21:15:10.933   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:15:10.933   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:15:10.933   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:15:10.933 Getting real path for '/home/pi'
+> 2019-03-01 21:15:10.933 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-01 21:15:10.934 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-01 21:15:10.934 Real path is '/home/pi'
+. 2019-03-01 21:15:10.934 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-01 21:15:10.935 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-01 21:15:10.935 Binary transfer mode selected.
+. 2019-03-01 21:15:10.935 Opening remote file.
+> 2019-03-01 21:15:10.935 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-01 21:15:10.938 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-01 21:15:10.938 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-01 21:15:10.939 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-01 21:15:10.939 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-01 21:15:10.941 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-01 21:15:10.941 Status code: 0
+< 2019-03-01 21:15:10.945 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-01 21:15:10.945 Status code: 0
+. 2019-03-01 21:15:10.945 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-01 21:15:10.945 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-01 21:15:10.945 Status code: 0
+. 2019-03-01 21:15:10.945 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-01 21:15:10.945 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:15:10.945 Script: exit
+. 2019-03-01 21:15:10.946 Script: Exit code: 0
+. 2019-03-01 21:15:10.946 Closing connection.
+. 2019-03-01 21:15:10.946 Sending special code: 12
+. 2019-03-01 21:15:10.946 Sent EOF message
+. 2019-03-01 21:15:51.805 --------------------------------------------------------------------------
+. 2019-03-01 21:15:51.805 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:15:51.805 Configuration: nul
+. 2019-03-01 21:15:51.805 Log level: Normal
+. 2019-03-01 21:15:51.805 Local account: MSI\kthsd_0
+. 2019-03-01 21:15:51.805 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:15:51.805 Process ID: 6132
+. 2019-03-01 21:15:51.805 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_14644_778 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:15:51.805 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:15:51.806 Login time: Friday, March 1, 2019 9:15:51 PM
+. 2019-03-01 21:15:51.806 --------------------------------------------------------------------------
+. 2019-03-01 21:15:51.806 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:15:51.806 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:15:51.806 --------------------------------------------------------------------------
+. 2019-03-01 21:15:51.806 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:15:51.806 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:15:51.806 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:15:51.806 Tunnel: No
+. 2019-03-01 21:15:51.806 Transfer Protocol: SFTP
+. 2019-03-01 21:15:51.806 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:15:51.806 Disable Nagle: No
+. 2019-03-01 21:15:51.806 Proxy: None
+. 2019-03-01 21:15:51.806 Send buffer: 262144
+. 2019-03-01 21:15:51.806 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:15:51.806 Bypass authentication: No
+. 2019-03-01 21:15:51.806 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:15:51.806 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:15:51.806 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:15:51.806 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:15:51.806 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:15:51.806 Simple channel: Yes
+. 2019-03-01 21:15:51.806 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:15:51.806 Shell: default
+. 2019-03-01 21:15:51.806 EOL: LF, UTF: Auto
+. 2019-03-01 21:15:51.806 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:15:51.806 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:15:51.806 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:15:51.806 SFTP Server: default
+. 2019-03-01 21:15:51.806 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:15:51.806 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:15:51.806 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:15:51.806 DST mode: Unix
+. 2019-03-01 21:15:51.806 --------------------------------------------------------------------------
+. 2019-03-01 21:15:51.806 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:15:51.806 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:15:51.809 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:15:51.892 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:15:51.892 Using SSH protocol version 2
+. 2019-03-01 21:15:51.892 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:15:51.896 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:15:52.255 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:15:52.257 Host key fingerprint is:
+. 2019-03-01 21:15:52.257 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:15:52.257 Host key matches configured key
+. 2019-03-01 21:15:52.258 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:15:52.258 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:15:52.258 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:15:52.258 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:15:52.320 Using username "pi".
+. 2019-03-01 21:15:52.327 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:15:52.327 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:15:52.327 Using stored password.
+. 2019-03-01 21:15:52.327 Sent password
+. 2019-03-01 21:15:52.579 Access granted
+. 2019-03-01 21:15:52.579 Opening session as main channel
+. 2019-03-01 21:15:52.786 Opened main channel
+. 2019-03-01 21:15:52.799 Started a shell/command
+. 2019-03-01 21:15:52.799 --------------------------------------------------------------------------
+. 2019-03-01 21:15:52.799 Using SFTP protocol.
+. 2019-03-01 21:15:52.799 Doing startup conversation with host.
+> 2019-03-01 21:15:52.799 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:15:52.814 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:15:52.814 SFTP version 3 negotiated.
+. 2019-03-01 21:15:52.814 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:15:52.814 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:15:52.814 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:15:52.814 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:15:52.814 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:15:52.814 We believe the server has signed timestamps bug
+. 2019-03-01 21:15:52.814 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:15:52.814 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:15:52.814 Getting current directory name.
+. 2019-03-01 21:15:52.814 Getting real path for '.'
+> 2019-03-01 21:15:52.814 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:15:52.819 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:15:52.819 Real path is '/home/pi'
+. 2019-03-01 21:15:52.819 Startup conversation with host finished.
+< 2019-03-01 21:15:52.819 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:15:52.819 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:15:52.820 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-01 21:15:52.820   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:15:52.820   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:15:52.820   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:15:52.820 Getting real path for '/home/pi'
+> 2019-03-01 21:15:52.820 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:15:52.825 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:15:52.825 Real path is '/home/pi'
+. 2019-03-01 21:15:52.825 File: 'ShapeDetectionTest.py' [2019-03-02T02:14:41.912Z] [7447]
+. 2019-03-01 21:15:52.825 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:15:52.825 Binary transfer mode selected.
+. 2019-03-01 21:15:52.825 Opening remote file.
+> 2019-03-01 21:15:52.825 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:15:52.828 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-01 21:15:52.828 Type: SSH_FXP_WRITE, Size: 7472, Number: 1030
+> 2019-03-01 21:15:52.829 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-01 21:15:52.829 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-01 21:15:52.835 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-01 21:15:52.835 Status code: 0
+< 2019-03-01 21:15:52.835 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-01 21:15:52.835 Status code: 0
+. 2019-03-01 21:15:52.835 Preserving timestamp [2019-03-02T02:14:41.000Z]
+< 2019-03-01 21:15:52.839 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-01 21:15:52.839 Status code: 0
+. 2019-03-01 21:15:52.839 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7447]
+. 2019-03-01 21:15:52.839 Copying finished: Transferred: 7,447, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:15:52.840 Script: put findshapespipeline.py"
+. 2019-03-01 21:15:52.840 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-01 21:15:52.840   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:15:52.840   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:15:52.840   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:15:52.840 Getting real path for '/home/pi'
+> 2019-03-01 21:15:52.840 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-01 21:15:52.845 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-01 21:15:52.845 Real path is '/home/pi'
+. 2019-03-01 21:15:52.846 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-01 21:15:52.846 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-01 21:15:52.846 Binary transfer mode selected.
+. 2019-03-01 21:15:52.846 Opening remote file.
+> 2019-03-01 21:15:52.846 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-01 21:15:52.850 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-01 21:15:52.850 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-01 21:15:52.851 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-01 21:15:52.851 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-01 21:15:52.860 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-01 21:15:52.860 Status code: 0
+< 2019-03-01 21:15:52.860 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-01 21:15:52.860 Status code: 0
+. 2019-03-01 21:15:52.860 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-01 21:15:52.860 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-01 21:15:52.860 Status code: 0
+. 2019-03-01 21:15:52.860 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-01 21:15:52.860 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:15:52.861 Script: put ShapeDetector.py"
+. 2019-03-01 21:15:52.861 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-01 21:15:52.861   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:15:52.861   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:15:52.861   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:15:52.861 Getting real path for '/home/pi'
+> 2019-03-01 21:15:52.861 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-01 21:15:52.867 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-01 21:15:52.867 Real path is '/home/pi'
+. 2019-03-01 21:15:52.867 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-01 21:15:52.867 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-01 21:15:52.867 Binary transfer mode selected.
+. 2019-03-01 21:15:52.867 Opening remote file.
+> 2019-03-01 21:15:52.867 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-01 21:15:52.871 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-01 21:15:52.871 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-01 21:15:52.871 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-01 21:15:52.871 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-01 21:15:52.874 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-01 21:15:52.874 Status code: 0
+< 2019-03-01 21:15:52.877 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-01 21:15:52.877 Status code: 0
+. 2019-03-01 21:15:52.877 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-01 21:15:52.877 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-01 21:15:52.877 Status code: 0
+. 2019-03-01 21:15:52.877 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-01 21:15:52.877 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:15:52.878 Script: exit
+. 2019-03-01 21:15:52.878 Script: Exit code: 0
+. 2019-03-01 21:15:52.878 Closing connection.
+. 2019-03-01 21:15:52.878 Sending special code: 12
+. 2019-03-01 21:15:52.878 Sent EOF message
+. 2019-03-01 21:17:06.899 --------------------------------------------------------------------------
+. 2019-03-01 21:17:06.900 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:17:06.900 Configuration: nul
+. 2019-03-01 21:17:06.900 Log level: Normal
+. 2019-03-01 21:17:06.900 Local account: MSI\kthsd_0
+. 2019-03-01 21:17:06.900 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:17:06.900 Process ID: 14812
+. 2019-03-01 21:17:06.900 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_8636_863 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:17:06.900 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:17:06.900 Login time: Friday, March 1, 2019 9:17:06 PM
+. 2019-03-01 21:17:06.900 --------------------------------------------------------------------------
+. 2019-03-01 21:17:06.900 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:17:06.900 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:17:06.900 --------------------------------------------------------------------------
+. 2019-03-01 21:17:06.900 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:17:06.900 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:17:06.900 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:17:06.900 Tunnel: No
+. 2019-03-01 21:17:06.901 Transfer Protocol: SFTP
+. 2019-03-01 21:17:06.901 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:17:06.901 Disable Nagle: No
+. 2019-03-01 21:17:06.901 Proxy: None
+. 2019-03-01 21:17:06.901 Send buffer: 262144
+. 2019-03-01 21:17:06.901 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:17:06.901 Bypass authentication: No
+. 2019-03-01 21:17:06.901 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:17:06.901 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:17:06.901 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:17:06.901 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:17:06.901 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:17:06.901 Simple channel: Yes
+. 2019-03-01 21:17:06.901 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:17:06.901 Shell: default
+. 2019-03-01 21:17:06.901 EOL: LF, UTF: Auto
+. 2019-03-01 21:17:06.901 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:17:06.901 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:17:06.901 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:17:06.901 SFTP Server: default
+. 2019-03-01 21:17:06.901 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:17:06.901 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:17:06.901 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:17:06.901 DST mode: Unix
+. 2019-03-01 21:17:06.901 --------------------------------------------------------------------------
+. 2019-03-01 21:17:06.901 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:17:06.901 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:17:06.911 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:17:06.983 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:17:06.983 Using SSH protocol version 2
+. 2019-03-01 21:17:06.983 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:17:06.990 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:17:07.415 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:17:07.416 Host key fingerprint is:
+. 2019-03-01 21:17:07.416 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:17:07.417 Host key matches configured key
+. 2019-03-01 21:17:07.417 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:17:07.417 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:17:07.417 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:17:07.417 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:17:07.428 Using username "pi".
+. 2019-03-01 21:17:07.434 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:17:07.434 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:17:07.434 Using stored password.
+. 2019-03-01 21:17:07.435 Sent password
+. 2019-03-01 21:17:07.650 Access granted
+. 2019-03-01 21:17:07.650 Opening session as main channel
+. 2019-03-01 21:17:07.864 Opened main channel
+. 2019-03-01 21:17:07.878 Started a shell/command
+. 2019-03-01 21:17:07.878 --------------------------------------------------------------------------
+. 2019-03-01 21:17:07.878 Using SFTP protocol.
+. 2019-03-01 21:17:07.878 Doing startup conversation with host.
+> 2019-03-01 21:17:07.878 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:17:07.890 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:17:07.891 SFTP version 3 negotiated.
+. 2019-03-01 21:17:07.891 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:17:07.891 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:17:07.891 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:17:07.891 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:17:07.891 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:17:07.891 We believe the server has signed timestamps bug
+. 2019-03-01 21:17:07.891 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:17:07.891 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:17:07.891 Getting current directory name.
+. 2019-03-01 21:17:07.891 Getting real path for '.'
+> 2019-03-01 21:17:07.891 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:17:07.903 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:17:07.903 Real path is '/home/pi'
+. 2019-03-01 21:17:07.903 Startup conversation with host finished.
+< 2019-03-01 21:17:07.904 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:17:07.905 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:17:07.905 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-01 21:17:07.906   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:17:07.906   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:17:07.906   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:17:07.906 Getting real path for '/home/pi'
+> 2019-03-01 21:17:07.906 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:17:07.910 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:17:07.910 Real path is '/home/pi'
+. 2019-03-01 21:17:07.911 File: 'ShapeDetectionTest.py' [2019-03-02T02:17:03.436Z] [7447]
+. 2019-03-01 21:17:07.911 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:17:07.911 Binary transfer mode selected.
+. 2019-03-01 21:17:07.911 Opening remote file.
+> 2019-03-01 21:17:07.911 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:17:07.917 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-01 21:17:07.917 Type: SSH_FXP_WRITE, Size: 7472, Number: 1030
+> 2019-03-01 21:17:07.917 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-01 21:17:07.917 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-01 21:17:07.930 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-01 21:17:07.930 Status code: 0
+< 2019-03-01 21:17:07.930 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-01 21:17:07.930 Status code: 0
+. 2019-03-01 21:17:07.930 Preserving timestamp [2019-03-02T02:17:03.000Z]
+< 2019-03-01 21:17:07.930 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-01 21:17:07.930 Status code: 0
+. 2019-03-01 21:17:07.930 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7447]
+. 2019-03-01 21:17:07.930 Copying finished: Transferred: 7,447, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:17:07.930 Script: put findshapespipeline.py"
+. 2019-03-01 21:17:07.931 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-01 21:17:07.931   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:17:07.931   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:17:07.931   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:17:07.931 Getting real path for '/home/pi'
+> 2019-03-01 21:17:07.931 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-01 21:17:07.933 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-01 21:17:07.933 Real path is '/home/pi'
+. 2019-03-01 21:17:07.933 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-01 21:17:07.934 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-01 21:17:07.934 Binary transfer mode selected.
+. 2019-03-01 21:17:07.934 Opening remote file.
+> 2019-03-01 21:17:07.934 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-01 21:17:07.940 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-01 21:17:07.940 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-01 21:17:07.940 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-01 21:17:07.940 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-01 21:17:07.947 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-01 21:17:07.947 Status code: 0
+< 2019-03-01 21:17:07.947 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-01 21:17:07.947 Status code: 0
+. 2019-03-01 21:17:07.947 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-01 21:17:07.952 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-01 21:17:07.952 Status code: 0
+. 2019-03-01 21:17:07.952 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-01 21:17:07.952 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:17:07.953 Script: put ShapeDetector.py"
+. 2019-03-01 21:17:07.953 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-01 21:17:07.953   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:17:07.953   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:17:07.953   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:17:07.953 Getting real path for '/home/pi'
+> 2019-03-01 21:17:07.953 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-01 21:17:07.958 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-01 21:17:07.958 Real path is '/home/pi'
+. 2019-03-01 21:17:07.958 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-01 21:17:07.959 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-01 21:17:07.959 Binary transfer mode selected.
+. 2019-03-01 21:17:07.959 Opening remote file.
+> 2019-03-01 21:17:07.959 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-01 21:17:07.965 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-01 21:17:07.965 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-01 21:17:07.965 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-01 21:17:07.965 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-01 21:17:07.971 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-01 21:17:07.971 Status code: 0
+< 2019-03-01 21:17:07.974 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-01 21:17:07.974 Status code: 0
+. 2019-03-01 21:17:07.975 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-01 21:17:07.975 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-01 21:17:07.975 Status code: 0
+. 2019-03-01 21:17:07.975 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-01 21:17:07.975 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:17:07.975 Script: exit
+. 2019-03-01 21:17:07.975 Script: Exit code: 0
+. 2019-03-01 21:17:07.975 Closing connection.
+. 2019-03-01 21:17:07.975 Sending special code: 12
+. 2019-03-01 21:17:07.976 Sent EOF message
+. 2019-03-01 21:28:31.284 --------------------------------------------------------------------------
+. 2019-03-01 21:28:31.284 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:28:31.284 Configuration: nul
+. 2019-03-01 21:28:31.284 Log level: Normal
+. 2019-03-01 21:28:31.284 Local account: MSI\kthsd_0
+. 2019-03-01 21:28:31.284 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:28:31.284 Process ID: 19036
+. 2019-03-01 21:28:31.285 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_9904_767 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:28:31.285 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:28:31.285 Login time: Friday, March 1, 2019 9:28:31 PM
+. 2019-03-01 21:28:31.285 --------------------------------------------------------------------------
+. 2019-03-01 21:28:31.285 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:28:31.285 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:28:31.285 --------------------------------------------------------------------------
+. 2019-03-01 21:28:31.285 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:28:31.285 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:28:31.285 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:28:31.285 Tunnel: No
+. 2019-03-01 21:28:31.285 Transfer Protocol: SFTP
+. 2019-03-01 21:28:31.285 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:28:31.285 Disable Nagle: No
+. 2019-03-01 21:28:31.285 Proxy: None
+. 2019-03-01 21:28:31.285 Send buffer: 262144
+. 2019-03-01 21:28:31.285 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:28:31.285 Bypass authentication: No
+. 2019-03-01 21:28:31.285 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:28:31.285 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:28:31.285 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:28:31.285 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:28:31.285 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:28:31.285 Simple channel: Yes
+. 2019-03-01 21:28:31.285 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:28:31.285 Shell: default
+. 2019-03-01 21:28:31.285 EOL: LF, UTF: Auto
+. 2019-03-01 21:28:31.285 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:28:31.285 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:28:31.285 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:28:31.285 SFTP Server: default
+. 2019-03-01 21:28:31.285 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:28:31.285 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:28:31.285 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:28:31.285 DST mode: Unix
+. 2019-03-01 21:28:31.285 --------------------------------------------------------------------------
+. 2019-03-01 21:28:31.286 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:28:31.286 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:28:31.291 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:28:31.365 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:28:31.365 Using SSH protocol version 2
+. 2019-03-01 21:28:31.365 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:28:31.371 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:28:31.777 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:28:31.779 Host key fingerprint is:
+. 2019-03-01 21:28:31.779 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:28:31.779 Host key matches configured key
+. 2019-03-01 21:28:31.780 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:28:31.780 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:28:31.780 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:28:31.780 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:28:31.789 Using username "pi".
+. 2019-03-01 21:28:31.795 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:28:31.795 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:28:31.795 Using stored password.
+. 2019-03-01 21:28:31.795 Sent password
+. 2019-03-01 21:28:32.005 Access granted
+. 2019-03-01 21:28:32.005 Opening session as main channel
+. 2019-03-01 21:28:32.237 Opened main channel
+. 2019-03-01 21:28:32.246 Started a shell/command
+. 2019-03-01 21:28:32.246 --------------------------------------------------------------------------
+. 2019-03-01 21:28:32.246 Using SFTP protocol.
+. 2019-03-01 21:28:32.247 Doing startup conversation with host.
+> 2019-03-01 21:28:32.247 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:28:32.262 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:28:32.262 SFTP version 3 negotiated.
+. 2019-03-01 21:28:32.262 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:28:32.262 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:28:32.262 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:28:32.262 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:28:32.262 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:28:32.262 We believe the server has signed timestamps bug
+. 2019-03-01 21:28:32.262 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:28:32.262 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:28:32.262 Getting current directory name.
+. 2019-03-01 21:28:32.262 Getting real path for '.'
+> 2019-03-01 21:28:32.262 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:28:32.266 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:28:32.266 Real path is '/home/pi'
+. 2019-03-01 21:28:32.266 Startup conversation with host finished.
+< 2019-03-01 21:28:32.266 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:28:32.266 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:28:32.267 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-01 21:28:32.267   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:28:32.267   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:28:32.267   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:28:32.267 Getting real path for '/home/pi'
+> 2019-03-01 21:28:32.267 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:28:32.272 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:28:32.272 Real path is '/home/pi'
+. 2019-03-01 21:28:32.272 File: 'ShapeDetectionTest.py' [2019-03-02T02:17:03.436Z] [7447]
+. 2019-03-01 21:28:32.273 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:28:32.273 Binary transfer mode selected.
+. 2019-03-01 21:28:32.273 Opening remote file.
+> 2019-03-01 21:28:32.273 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:28:32.275 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-01 21:28:32.275 Type: SSH_FXP_WRITE, Size: 7472, Number: 1030
+> 2019-03-01 21:28:32.276 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-01 21:28:32.276 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-01 21:28:32.285 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-01 21:28:32.285 Status code: 0
+< 2019-03-01 21:28:32.286 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-01 21:28:32.286 Status code: 0
+. 2019-03-01 21:28:32.286 Preserving timestamp [2019-03-02T02:17:03.000Z]
+< 2019-03-01 21:28:32.286 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-01 21:28:32.286 Status code: 0
+. 2019-03-01 21:28:32.286 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7447]
+. 2019-03-01 21:28:32.286 Copying finished: Transferred: 7,447, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:28:32.286 Script: put findshapespipeline.py"
+. 2019-03-01 21:28:32.287 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-01 21:28:32.287   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:28:32.287   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:28:32.287   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:28:32.287 Getting real path for '/home/pi'
+> 2019-03-01 21:28:32.287 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-01 21:28:32.290 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-01 21:28:32.290 Real path is '/home/pi'
+. 2019-03-01 21:28:32.290 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-01 21:28:32.290 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-01 21:28:32.290 Binary transfer mode selected.
+. 2019-03-01 21:28:32.290 Opening remote file.
+> 2019-03-01 21:28:32.290 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-01 21:28:32.296 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-01 21:28:32.296 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-01 21:28:32.296 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-01 21:28:32.296 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-01 21:28:32.303 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-01 21:28:32.303 Status code: 0
+< 2019-03-01 21:28:32.306 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-01 21:28:32.306 Status code: 0
+. 2019-03-01 21:28:32.306 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-01 21:28:32.306 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-01 21:28:32.306 Status code: 0
+. 2019-03-01 21:28:32.306 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-01 21:28:32.306 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:28:32.306 Script: put ShapeDetector.py"
+. 2019-03-01 21:28:32.307 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-01 21:28:32.307   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:28:32.307   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:28:32.307   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:28:32.307 Getting real path for '/home/pi'
+> 2019-03-01 21:28:32.307 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-01 21:28:32.313 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-01 21:28:32.313 Real path is '/home/pi'
+. 2019-03-01 21:28:32.313 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-01 21:28:32.313 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-01 21:28:32.313 Binary transfer mode selected.
+. 2019-03-01 21:28:32.313 Opening remote file.
+> 2019-03-01 21:28:32.313 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-01 21:28:32.320 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-01 21:28:32.320 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-01 21:28:32.320 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-01 21:28:32.320 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-01 21:28:32.325 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-01 21:28:32.325 Status code: 0
+< 2019-03-01 21:28:32.332 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-01 21:28:32.332 Status code: 0
+. 2019-03-01 21:28:32.332 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-01 21:28:32.332 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-01 21:28:32.332 Status code: 0
+. 2019-03-01 21:28:32.332 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-01 21:28:32.332 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:28:32.333 Script: exit
+. 2019-03-01 21:28:32.333 Script: Exit code: 0
+. 2019-03-01 21:28:32.333 Closing connection.
+. 2019-03-01 21:28:32.333 Sending special code: 12
+. 2019-03-01 21:28:32.333 Sent EOF message
+. 2019-03-01 21:32:52.512 --------------------------------------------------------------------------
+. 2019-03-01 21:32:52.512 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-01 21:32:52.512 Configuration: nul
+. 2019-03-01 21:32:52.512 Log level: Normal
+. 2019-03-01 21:32:52.512 Local account: MSI\kthsd_0
+. 2019-03-01 21:32:52.512 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-01 21:32:52.512 Process ID: 15184
+. 2019-03-01 21:32:52.513 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_22992_890 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-01 21:32:52.513 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-01 21:32:52.513 Login time: Friday, March 1, 2019 9:32:52 PM
+. 2019-03-01 21:32:52.513 --------------------------------------------------------------------------
+. 2019-03-01 21:32:52.513 Script: Retrospectively logging previous script records:
+> 2019-03-01 21:32:52.513 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-01 21:32:52.513 --------------------------------------------------------------------------
+. 2019-03-01 21:32:52.513 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-01 21:32:52.513 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-01 21:32:52.513 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-01 21:32:52.513 Tunnel: No
+. 2019-03-01 21:32:52.513 Transfer Protocol: SFTP
+. 2019-03-01 21:32:52.513 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-01 21:32:52.513 Disable Nagle: No
+. 2019-03-01 21:32:52.513 Proxy: None
+. 2019-03-01 21:32:52.513 Send buffer: 262144
+. 2019-03-01 21:32:52.513 SSH protocol version: 2; Compression: No
+. 2019-03-01 21:32:52.513 Bypass authentication: No
+. 2019-03-01 21:32:52.513 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-01 21:32:52.513 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-01 21:32:52.513 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-01 21:32:52.513 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-01 21:32:52.513 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-01 21:32:52.513 Simple channel: Yes
+. 2019-03-01 21:32:52.513 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-01 21:32:52.513 Shell: default
+. 2019-03-01 21:32:52.513 EOL: LF, UTF: Auto
+. 2019-03-01 21:32:52.513 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-01 21:32:52.513 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-01 21:32:52.513 SFTP Bugs: Auto,Auto
+. 2019-03-01 21:32:52.513 SFTP Server: default
+. 2019-03-01 21:32:52.513 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-01 21:32:52.513 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-01 21:32:52.514 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-01 21:32:52.514 DST mode: Unix
+. 2019-03-01 21:32:52.514 --------------------------------------------------------------------------
+. 2019-03-01 21:32:52.514 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-01 21:32:52.514 Connecting to 10.62.39.12 port 22
+. 2019-03-01 21:32:52.520 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-01 21:32:52.597 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-01 21:32:52.597 Using SSH protocol version 2
+. 2019-03-01 21:32:52.597 Have a known host key of type ssh-ed25519
+. 2019-03-01 21:32:52.601 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-01 21:32:52.989 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-01 21:32:52.990 Host key fingerprint is:
+. 2019-03-01 21:32:52.990 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-01 21:32:52.990 Host key matches configured key
+. 2019-03-01 21:32:52.991 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-01 21:32:52.991 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-01 21:32:52.991 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-01 21:32:52.991 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-01 21:32:53.075 Using username "pi".
+. 2019-03-01 21:32:53.081 Server offered these authentication methods: publickey,password
+. 2019-03-01 21:32:53.081 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-01 21:32:53.081 Using stored password.
+. 2019-03-01 21:32:53.081 Sent password
+. 2019-03-01 21:32:53.299 Access granted
+. 2019-03-01 21:32:53.299 Opening session as main channel
+. 2019-03-01 21:32:53.525 Opened main channel
+. 2019-03-01 21:32:53.534 Started a shell/command
+. 2019-03-01 21:32:53.534 --------------------------------------------------------------------------
+. 2019-03-01 21:32:53.534 Using SFTP protocol.
+. 2019-03-01 21:32:53.534 Doing startup conversation with host.
+> 2019-03-01 21:32:53.535 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-01 21:32:53.551 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-01 21:32:53.551 SFTP version 3 negotiated.
+. 2019-03-01 21:32:53.551 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-01 21:32:53.551 Supports statvfs@openssh.com extension version "2"
+. 2019-03-01 21:32:53.551 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-01 21:32:53.551 Supports hardlink@openssh.com extension version "1"
+. 2019-03-01 21:32:53.551 Unknown server extension fsync@openssh.com="1"
+. 2019-03-01 21:32:53.551 We believe the server has signed timestamps bug
+. 2019-03-01 21:32:53.551 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-01 21:32:53.551 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-01 21:32:53.551 Getting current directory name.
+. 2019-03-01 21:32:53.551 Getting real path for '.'
+> 2019-03-01 21:32:53.551 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-01 21:32:53.555 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-01 21:32:53.555 Real path is '/home/pi'
+. 2019-03-01 21:32:53.555 Startup conversation with host finished.
+< 2019-03-01 21:32:53.555 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-01 21:32:53.556 Script: put ShapeDetectionTest.py"
+. 2019-03-01 21:32:53.556 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,445
+. 2019-03-01 21:32:53.556   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:32:53.556   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:32:53.556   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:32:53.557 Getting real path for '/home/pi'
+> 2019-03-01 21:32:53.557 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-01 21:32:53.561 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-01 21:32:53.561 Real path is '/home/pi'
+. 2019-03-01 21:32:53.561 File: 'ShapeDetectionTest.py' [2019-03-02T02:32:47.203Z] [7445]
+. 2019-03-01 21:32:53.562 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-01 21:32:53.562 Binary transfer mode selected.
+. 2019-03-01 21:32:53.562 Opening remote file.
+> 2019-03-01 21:32:53.562 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-01 21:32:53.568 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-01 21:32:53.568 Type: SSH_FXP_WRITE, Size: 7470, Number: 1030
+> 2019-03-01 21:32:53.568 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-01 21:32:53.568 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-01 21:32:53.581 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-01 21:32:53.581 Status code: 0
+< 2019-03-01 21:32:53.584 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-01 21:32:53.584 Status code: 0
+. 2019-03-01 21:32:53.584 Preserving timestamp [2019-03-02T02:32:47.000Z]
+< 2019-03-01 21:32:53.584 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-01 21:32:53.584 Status code: 0
+. 2019-03-01 21:32:53.584 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7445]
+. 2019-03-01 21:32:53.584 Copying finished: Transferred: 7,445, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:32:53.584 Script: put findshapespipeline.py"
+. 2019-03-01 21:32:53.584 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-01 21:32:53.584   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:32:53.584   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:32:53.584   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:32:53.584 Getting real path for '/home/pi'
+> 2019-03-01 21:32:53.584 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-01 21:32:53.590 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-01 21:32:53.590 Real path is '/home/pi'
+. 2019-03-01 21:32:53.590 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-01 21:32:53.591 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-01 21:32:53.591 Binary transfer mode selected.
+. 2019-03-01 21:32:53.591 Opening remote file.
+> 2019-03-01 21:32:53.591 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-01 21:32:53.597 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-01 21:32:53.597 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-01 21:32:53.598 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-01 21:32:53.598 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-01 21:32:53.603 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-01 21:32:53.603 Status code: 0
+< 2019-03-01 21:32:53.606 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-01 21:32:53.606 Status code: 0
+. 2019-03-01 21:32:53.606 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-01 21:32:53.607 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-01 21:32:53.607 Status code: 0
+. 2019-03-01 21:32:53.607 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-01 21:32:53.607 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:32:53.607 Script: put ShapeDetector.py"
+. 2019-03-01 21:32:53.607 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-01 21:32:53.607   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-01 21:32:53.607   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-01 21:32:53.607   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-01 21:32:53.607 Getting real path for '/home/pi'
+> 2019-03-01 21:32:53.607 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-01 21:32:53.612 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-01 21:32:53.612 Real path is '/home/pi'
+. 2019-03-01 21:32:53.612 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-01 21:32:53.612 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-01 21:32:53.612 Binary transfer mode selected.
+. 2019-03-01 21:32:53.612 Opening remote file.
+> 2019-03-01 21:32:53.612 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-01 21:32:53.615 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-01 21:32:53.615 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-01 21:32:53.616 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-01 21:32:53.616 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-01 21:32:53.621 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-01 21:32:53.622 Status code: 0
+< 2019-03-01 21:32:53.625 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-01 21:32:53.625 Status code: 0
+. 2019-03-01 21:32:53.625 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-01 21:32:53.625 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-01 21:32:53.625 Status code: 0
+. 2019-03-01 21:32:53.625 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-01 21:32:53.625 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-01 21:32:53.626 Script: exit
+. 2019-03-01 21:32:53.626 Script: Exit code: 0
+. 2019-03-01 21:32:53.626 Closing connection.
+. 2019-03-01 21:32:53.626 Sending special code: 12
+. 2019-03-01 21:32:53.627 Sent EOF message
+. 2019-03-02 10:25:16.656 --------------------------------------------------------------------------
+. 2019-03-02 10:25:16.687 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-02 10:25:16.687 Configuration: nul
+. 2019-03-02 10:25:16.687 Log level: Normal
+. 2019-03-02 10:25:16.687 Local account: MSI\kthsd_0
+. 2019-03-02 10:25:16.687 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-02 10:25:16.687 Process ID: 15928
+. 2019-03-02 10:25:16.688 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_10696_932 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-02 10:25:16.688 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-02 10:25:16.688 Login time: Saturday, March 2, 2019 10:25:16 AM
+. 2019-03-02 10:25:16.688 --------------------------------------------------------------------------
+. 2019-03-02 10:25:16.688 Script: Retrospectively logging previous script records:
+> 2019-03-02 10:25:16.688 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-02 10:25:16.688 --------------------------------------------------------------------------
+. 2019-03-02 10:25:16.688 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-02 10:25:16.688 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-02 10:25:16.688 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-02 10:25:16.688 Tunnel: No
+. 2019-03-02 10:25:16.688 Transfer Protocol: SFTP
+. 2019-03-02 10:25:16.688 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-02 10:25:16.688 Disable Nagle: No
+. 2019-03-02 10:25:16.688 Proxy: None
+. 2019-03-02 10:25:16.688 Send buffer: 262144
+. 2019-03-02 10:25:16.688 SSH protocol version: 2; Compression: No
+. 2019-03-02 10:25:16.688 Bypass authentication: No
+. 2019-03-02 10:25:16.688 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-02 10:25:16.688 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-02 10:25:16.688 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-02 10:25:16.688 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-02 10:25:16.688 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-02 10:25:16.688 Simple channel: Yes
+. 2019-03-02 10:25:16.688 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-02 10:25:16.688 Shell: default
+. 2019-03-02 10:25:16.688 EOL: LF, UTF: Auto
+. 2019-03-02 10:25:16.688 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-02 10:25:16.688 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-02 10:25:16.688 SFTP Bugs: Auto,Auto
+. 2019-03-02 10:25:16.688 SFTP Server: default
+. 2019-03-02 10:25:16.688 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-02 10:25:16.688 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-02 10:25:16.688 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-02 10:25:16.688 DST mode: Unix
+. 2019-03-02 10:25:16.688 --------------------------------------------------------------------------
+. 2019-03-02 10:25:16.689 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-02 10:25:16.689 Connecting to 10.62.39.12 port 22
+. 2019-03-02 10:25:16.692 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-02 10:25:16.770 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-02 10:25:16.770 Using SSH protocol version 2
+. 2019-03-02 10:25:16.770 Have a known host key of type ssh-ed25519
+. 2019-03-02 10:25:16.775 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-02 10:25:17.205 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-02 10:25:17.206 Host key fingerprint is:
+. 2019-03-02 10:25:17.206 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-02 10:25:17.207 Host key matches configured key
+. 2019-03-02 10:25:17.207 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-02 10:25:17.207 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-02 10:25:17.207 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-02 10:25:17.207 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-02 10:25:17.214 Using username "pi".
+. 2019-03-02 10:25:17.219 Server offered these authentication methods: publickey,password
+. 2019-03-02 10:25:17.219 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-02 10:25:17.219 Using stored password.
+. 2019-03-02 10:25:17.219 Sent password
+. 2019-03-02 10:25:17.437 Access granted
+. 2019-03-02 10:25:17.437 Opening session as main channel
+. 2019-03-02 10:25:17.646 Opened main channel
+. 2019-03-02 10:25:17.655 Started a shell/command
+. 2019-03-02 10:25:17.656 --------------------------------------------------------------------------
+. 2019-03-02 10:25:17.656 Using SFTP protocol.
+. 2019-03-02 10:25:17.656 Doing startup conversation with host.
+> 2019-03-02 10:25:17.656 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-02 10:25:17.676 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-02 10:25:17.676 SFTP version 3 negotiated.
+. 2019-03-02 10:25:17.676 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-02 10:25:17.676 Supports statvfs@openssh.com extension version "2"
+. 2019-03-02 10:25:17.676 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-02 10:25:17.676 Supports hardlink@openssh.com extension version "1"
+. 2019-03-02 10:25:17.676 Unknown server extension fsync@openssh.com="1"
+. 2019-03-02 10:25:17.676 We believe the server has signed timestamps bug
+. 2019-03-02 10:25:17.676 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-02 10:25:17.676 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-02 10:25:17.676 Getting current directory name.
+. 2019-03-02 10:25:17.676 Getting real path for '.'
+> 2019-03-02 10:25:17.676 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-02 10:25:17.678 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-02 10:25:17.678 Real path is '/home/pi'
+. 2019-03-02 10:25:17.678 Startup conversation with host finished.
+< 2019-03-02 10:25:17.679 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-02 10:25:17.679 Script: put ShapeDetectionTest.py"
+. 2019-03-02 10:25:17.680 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-02 10:25:17.680   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:25:17.680   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:25:17.680   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:25:17.680 Getting real path for '/home/pi'
+> 2019-03-02 10:25:17.680 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-02 10:25:17.683 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-02 10:25:17.683 Real path is '/home/pi'
+. 2019-03-02 10:25:17.684 File: 'ShapeDetectionTest.py' [2019-03-02T02:33:39.405Z] [7447]
+. 2019-03-02 10:25:17.702 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-02 10:25:17.702 Binary transfer mode selected.
+. 2019-03-02 10:25:17.702 Opening remote file.
+> 2019-03-02 10:25:17.702 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-02 10:25:17.706 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-02 10:25:17.707 Type: SSH_FXP_WRITE, Size: 7472, Number: 1030
+> 2019-03-02 10:25:17.707 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-02 10:25:17.707 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-02 10:25:17.711 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-02 10:25:17.711 Status code: 0
+< 2019-03-02 10:25:17.714 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-02 10:25:17.714 Status code: 0
+. 2019-03-02 10:25:17.714 Preserving timestamp [2019-03-02T02:33:39.000Z]
+< 2019-03-02 10:25:17.715 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-02 10:25:17.715 Status code: 0
+. 2019-03-02 10:25:17.715 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7447]
+. 2019-03-02 10:25:17.715 Copying finished: Transferred: 7,447, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:25:17.715 Script: put findshapespipeline.py"
+. 2019-03-02 10:25:17.715 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-02 10:25:17.715   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:25:17.716   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:25:17.716   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:25:17.716 Getting real path for '/home/pi'
+> 2019-03-02 10:25:17.716 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-02 10:25:17.718 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-02 10:25:17.718 Real path is '/home/pi'
+. 2019-03-02 10:25:17.726 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-02 10:25:17.737 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-02 10:25:17.737 Binary transfer mode selected.
+. 2019-03-02 10:25:17.737 Opening remote file.
+> 2019-03-02 10:25:17.737 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-02 10:25:17.741 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-02 10:25:17.742 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-02 10:25:17.742 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-02 10:25:17.742 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-02 10:25:17.749 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-02 10:25:17.749 Status code: 0
+< 2019-03-02 10:25:17.749 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-02 10:25:17.749 Status code: 0
+. 2019-03-02 10:25:17.749 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-02 10:25:17.750 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-02 10:25:17.750 Status code: 0
+. 2019-03-02 10:25:17.750 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-02 10:25:17.750 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:25:17.750 Script: put ShapeDetector.py"
+. 2019-03-02 10:25:17.751 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-02 10:25:17.751   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:25:17.751   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:25:17.751   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:25:17.751 Getting real path for '/home/pi'
+> 2019-03-02 10:25:17.751 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-02 10:25:17.754 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-02 10:25:17.754 Real path is '/home/pi'
+. 2019-03-02 10:25:17.754 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-02 10:25:17.758 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-02 10:25:17.758 Binary transfer mode selected.
+. 2019-03-02 10:25:17.758 Opening remote file.
+> 2019-03-02 10:25:17.758 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-02 10:25:17.761 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-02 10:25:17.761 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-02 10:25:17.761 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-02 10:25:17.761 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-02 10:25:17.764 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-02 10:25:17.764 Status code: 0
+< 2019-03-02 10:25:17.766 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-02 10:25:17.766 Status code: 0
+. 2019-03-02 10:25:17.766 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-02 10:25:17.767 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-02 10:25:17.767 Status code: 0
+. 2019-03-02 10:25:17.767 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-02 10:25:17.767 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:25:17.767 Script: exit
+. 2019-03-02 10:25:17.767 Script: Exit code: 0
+. 2019-03-02 10:25:17.767 Closing connection.
+. 2019-03-02 10:25:17.767 Sending special code: 12
+. 2019-03-02 10:25:17.768 Sent EOF message
+. 2019-03-02 10:30:29.251 --------------------------------------------------------------------------
+. 2019-03-02 10:30:29.251 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-02 10:30:29.251 Configuration: nul
+. 2019-03-02 10:30:29.251 Log level: Normal
+. 2019-03-02 10:30:29.251 Local account: MSI\kthsd_0
+. 2019-03-02 10:30:29.251 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-02 10:30:29.251 Process ID: 12712
+. 2019-03-02 10:30:29.251 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_16200_762 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-02 10:30:29.252 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-02 10:30:29.252 Login time: Saturday, March 2, 2019 10:30:29 AM
+. 2019-03-02 10:30:29.252 --------------------------------------------------------------------------
+. 2019-03-02 10:30:29.252 Script: Retrospectively logging previous script records:
+> 2019-03-02 10:30:29.252 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-02 10:30:29.252 --------------------------------------------------------------------------
+. 2019-03-02 10:30:29.252 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-02 10:30:29.252 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-02 10:30:29.252 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-02 10:30:29.252 Tunnel: No
+. 2019-03-02 10:30:29.252 Transfer Protocol: SFTP
+. 2019-03-02 10:30:29.252 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-02 10:30:29.252 Disable Nagle: No
+. 2019-03-02 10:30:29.252 Proxy: None
+. 2019-03-02 10:30:29.252 Send buffer: 262144
+. 2019-03-02 10:30:29.252 SSH protocol version: 2; Compression: No
+. 2019-03-02 10:30:29.252 Bypass authentication: No
+. 2019-03-02 10:30:29.252 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-02 10:30:29.252 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-02 10:30:29.252 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-02 10:30:29.252 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-02 10:30:29.252 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-02 10:30:29.252 Simple channel: Yes
+. 2019-03-02 10:30:29.252 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-02 10:30:29.252 Shell: default
+. 2019-03-02 10:30:29.252 EOL: LF, UTF: Auto
+. 2019-03-02 10:30:29.252 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-02 10:30:29.252 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-02 10:30:29.252 SFTP Bugs: Auto,Auto
+. 2019-03-02 10:30:29.252 SFTP Server: default
+. 2019-03-02 10:30:29.252 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-02 10:30:29.252 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-02 10:30:29.252 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-02 10:30:29.252 DST mode: Unix
+. 2019-03-02 10:30:29.252 --------------------------------------------------------------------------
+. 2019-03-02 10:30:29.253 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-02 10:30:29.253 Connecting to 10.62.39.12 port 22
+. 2019-03-02 10:30:29.257 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-02 10:30:29.332 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-02 10:30:29.332 Using SSH protocol version 2
+. 2019-03-02 10:30:29.332 Have a known host key of type ssh-ed25519
+. 2019-03-02 10:30:29.336 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-02 10:30:29.793 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-02 10:30:29.794 Host key fingerprint is:
+. 2019-03-02 10:30:29.794 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-02 10:30:29.795 Host key matches configured key
+. 2019-03-02 10:30:29.795 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-02 10:30:29.795 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-02 10:30:29.795 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-02 10:30:29.795 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-02 10:30:29.800 Using username "pi".
+. 2019-03-02 10:30:29.803 Server offered these authentication methods: publickey,password
+. 2019-03-02 10:30:29.803 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-02 10:30:29.803 Using stored password.
+. 2019-03-02 10:30:29.803 Sent password
+. 2019-03-02 10:30:30.015 Access granted
+. 2019-03-02 10:30:30.016 Opening session as main channel
+. 2019-03-02 10:30:30.222 Opened main channel
+. 2019-03-02 10:30:30.232 Started a shell/command
+. 2019-03-02 10:30:30.232 --------------------------------------------------------------------------
+. 2019-03-02 10:30:30.233 Using SFTP protocol.
+. 2019-03-02 10:30:30.233 Doing startup conversation with host.
+> 2019-03-02 10:30:30.233 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-02 10:30:30.249 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-02 10:30:30.250 SFTP version 3 negotiated.
+. 2019-03-02 10:30:30.250 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-02 10:30:30.250 Supports statvfs@openssh.com extension version "2"
+. 2019-03-02 10:30:30.250 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-02 10:30:30.250 Supports hardlink@openssh.com extension version "1"
+. 2019-03-02 10:30:30.250 Unknown server extension fsync@openssh.com="1"
+. 2019-03-02 10:30:30.250 We believe the server has signed timestamps bug
+. 2019-03-02 10:30:30.250 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-02 10:30:30.250 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-02 10:30:30.250 Getting current directory name.
+. 2019-03-02 10:30:30.250 Getting real path for '.'
+> 2019-03-02 10:30:30.250 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-02 10:30:30.253 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-02 10:30:30.253 Real path is '/home/pi'
+. 2019-03-02 10:30:30.253 Startup conversation with host finished.
+< 2019-03-02 10:30:30.253 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-02 10:30:30.254 Script: put ShapeDetectionTest.py"
+. 2019-03-02 10:30:30.254 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,447
+. 2019-03-02 10:30:30.254   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:30:30.254   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:30:30.254   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:30:30.255 Getting real path for '/home/pi'
+> 2019-03-02 10:30:30.255 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-02 10:30:30.257 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-02 10:30:30.257 Real path is '/home/pi'
+. 2019-03-02 10:30:30.257 File: 'ShapeDetectionTest.py' [2019-03-02T15:30:25.365Z] [7447]
+. 2019-03-02 10:30:30.262 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-02 10:30:30.262 Binary transfer mode selected.
+. 2019-03-02 10:30:30.262 Opening remote file.
+> 2019-03-02 10:30:30.262 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-02 10:30:30.267 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-02 10:30:30.267 Type: SSH_FXP_WRITE, Size: 7472, Number: 1030
+> 2019-03-02 10:30:30.268 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-02 10:30:30.268 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-02 10:30:30.272 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-02 10:30:30.272 Status code: 0
+< 2019-03-02 10:30:30.275 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-02 10:30:30.275 Status code: 0
+. 2019-03-02 10:30:30.275 Preserving timestamp [2019-03-02T15:30:25.000Z]
+< 2019-03-02 10:30:30.275 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-02 10:30:30.275 Status code: 0
+. 2019-03-02 10:30:30.275 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7447]
+. 2019-03-02 10:30:30.275 Copying finished: Transferred: 7,447, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:30:30.276 Script: put findshapespipeline.py"
+. 2019-03-02 10:30:30.276 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-02 10:30:30.276   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:30:30.276   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:30:30.276   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:30:30.276 Getting real path for '/home/pi'
+> 2019-03-02 10:30:30.276 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-02 10:30:30.278 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-02 10:30:30.278 Real path is '/home/pi'
+. 2019-03-02 10:30:30.279 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-02 10:30:30.279 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-02 10:30:30.279 Binary transfer mode selected.
+. 2019-03-02 10:30:30.279 Opening remote file.
+> 2019-03-02 10:30:30.279 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-02 10:30:30.281 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-02 10:30:30.281 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-02 10:30:30.282 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-02 10:30:30.282 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-02 10:30:30.286 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-02 10:30:30.286 Status code: 0
+< 2019-03-02 10:30:30.292 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-02 10:30:30.292 Status code: 0
+. 2019-03-02 10:30:30.292 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-02 10:30:30.292 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-02 10:30:30.292 Status code: 0
+. 2019-03-02 10:30:30.292 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-02 10:30:30.292 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:30:30.292 Script: put ShapeDetector.py"
+. 2019-03-02 10:30:30.293 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-02 10:30:30.293   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:30:30.293   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:30:30.293   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:30:30.293 Getting real path for '/home/pi'
+> 2019-03-02 10:30:30.293 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-02 10:30:30.295 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-02 10:30:30.295 Real path is '/home/pi'
+. 2019-03-02 10:30:30.295 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-02 10:30:30.296 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-02 10:30:30.296 Binary transfer mode selected.
+. 2019-03-02 10:30:30.296 Opening remote file.
+> 2019-03-02 10:30:30.296 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-02 10:30:30.298 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-02 10:30:30.299 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-02 10:30:30.299 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-02 10:30:30.299 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-02 10:30:30.301 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-02 10:30:30.302 Status code: 0
+< 2019-03-02 10:30:30.304 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-02 10:30:30.304 Status code: 0
+. 2019-03-02 10:30:30.304 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-02 10:30:30.305 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-02 10:30:30.305 Status code: 0
+. 2019-03-02 10:30:30.305 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-02 10:30:30.305 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:30:30.306 Script: exit
+. 2019-03-02 10:30:30.306 Script: Exit code: 0
+. 2019-03-02 10:30:30.306 Closing connection.
+. 2019-03-02 10:30:30.306 Sending special code: 12
+. 2019-03-02 10:30:30.306 Sent EOF message
+. 2019-03-02 10:34:28.463 --------------------------------------------------------------------------
+. 2019-03-02 10:34:28.463 WinSCP Version 5.13.7 (Build 9125) (OS 10.0.17134 - Windows 10 Enterprise)
+. 2019-03-02 10:34:28.463 Configuration: nul
+. 2019-03-02 10:34:28.463 Log level: Normal
+. 2019-03-02 10:34:28.463 Local account: MSI\kthsd_0
+. 2019-03-02 10:34:28.463 Working directory: D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane
+. 2019-03-02 10:34:28.463 Process ID: 13656
+. 2019-03-02 10:34:28.464 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=5.13.7 /consoleinstance=_16768_480 "/log=D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane\WinSCP.log" "/ini=nul" "/command" "open sftp://pi:***@10.62.39.12/ -hostkey=""ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=""" "put ShapeDetectionTest.py""" "put findshapespipeline.py""" "put ShapeDetector.py""" "exit"
+. 2019-03-02 10:34:28.464 Time zone: Current: GMT-5, Standard: GMT-5 (Eastern Standard Time), DST: GMT-4 (Eastern Daylight Time), DST Start: 3/10/2019, DST End: 11/3/2019
+. 2019-03-02 10:34:28.464 Login time: Saturday, March 2, 2019 10:34:28 AM
+. 2019-03-02 10:34:28.464 --------------------------------------------------------------------------
+. 2019-03-02 10:34:28.464 Script: Retrospectively logging previous script records:
+> 2019-03-02 10:34:28.464 Script: open sftp://pi:***@10.62.39.12/ -hostkey="ssh-ed25519 256 HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM="
+. 2019-03-02 10:34:28.464 --------------------------------------------------------------------------
+. 2019-03-02 10:34:28.464 Session name: pi@10.62.39.12 (Ad-Hoc site)
+. 2019-03-02 10:34:28.464 Host name: 10.62.39.12 (Port: 22)
+. 2019-03-02 10:34:28.464 User name: pi (Password: Yes, Key file: No, Passphrase: No)
+. 2019-03-02 10:34:28.464 Tunnel: No
+. 2019-03-02 10:34:28.464 Transfer Protocol: SFTP
+. 2019-03-02 10:34:28.464 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2019-03-02 10:34:28.464 Disable Nagle: No
+. 2019-03-02 10:34:28.464 Proxy: None
+. 2019-03-02 10:34:28.464 Send buffer: 262144
+. 2019-03-02 10:34:28.464 SSH protocol version: 2; Compression: No
+. 2019-03-02 10:34:28.464 Bypass authentication: No
+. 2019-03-02 10:34:28.464 Try agent: Yes; Agent forwarding: No; TIS/CryptoCard: No; KI: Yes; GSSAPI: Yes
+. 2019-03-02 10:34:28.464 GSSAPI: Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2019-03-02 10:34:28.464 Ciphers: aes,chacha20,blowfish,3des,WARN,arcfour,des; Ssh2DES: No
+. 2019-03-02 10:34:28.464 KEX: ecdh,dh-gex-sha1,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2019-03-02 10:34:28.464 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2019-03-02 10:34:28.464 Simple channel: Yes
+. 2019-03-02 10:34:28.464 Return code variable: Autodetect; Lookup user groups: Auto
+. 2019-03-02 10:34:28.464 Shell: default
+. 2019-03-02 10:34:28.465 EOL: LF, UTF: Auto
+. 2019-03-02 10:34:28.465 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2019-03-02 10:34:28.465 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No
+. 2019-03-02 10:34:28.465 SFTP Bugs: Auto,Auto
+. 2019-03-02 10:34:28.465 SFTP Server: default
+. 2019-03-02 10:34:28.465 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2019-03-02 10:34:28.465 Cache directory changes: Yes, Permanent: Yes
+. 2019-03-02 10:34:28.465 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2019-03-02 10:34:28.465 DST mode: Unix
+. 2019-03-02 10:34:28.465 --------------------------------------------------------------------------
+. 2019-03-02 10:34:28.465 Looking up host "10.62.39.12" for SSH connection
+. 2019-03-02 10:34:28.465 Connecting to 10.62.39.12 port 22
+. 2019-03-02 10:34:28.468 We claim version: SSH-2.0-WinSCP_release_5.13.7
+. 2019-03-02 10:34:28.544 Server version: SSH-2.0-OpenSSH_7.4p1 Raspbian-10+deb9u4
+. 2019-03-02 10:34:28.544 Using SSH protocol version 2
+. 2019-03-02 10:34:28.544 Have a known host key of type ssh-ed25519
+. 2019-03-02 10:34:28.550 Doing ECDH key exchange with curve Curve25519 and hash SHA-256
+. 2019-03-02 10:34:28.996 Server also has ecdsa-sha2-nistp256/ssh-rsa host keys, but we don't know any of them
+. 2019-03-02 10:34:28.998 Host key fingerprint is:
+. 2019-03-02 10:34:28.998 ssh-ed25519 256 6d:48:60:66:c5:e4:80:95:0d:d6:27:ff:90:49:91:2d HyWTbWildpUktR38azRhgWLODiJQkNXO5tdu3KgiReM=
+. 2019-03-02 10:34:28.998 Host key matches configured key
+. 2019-03-02 10:34:28.999 Initialised AES-256 SDCTR client->server encryption
+. 2019-03-02 10:34:28.999 Initialised HMAC-SHA-256 client->server MAC algorithm
+. 2019-03-02 10:34:28.999 Initialised AES-256 SDCTR server->client encryption
+. 2019-03-02 10:34:28.999 Initialised HMAC-SHA-256 server->client MAC algorithm
+! 2019-03-02 10:34:29.008 Using username "pi".
+. 2019-03-02 10:34:29.011 Server offered these authentication methods: publickey,password
+. 2019-03-02 10:34:29.011 Prompt (password, "SSH password", <no instructions>, "&Password: ")
+. 2019-03-02 10:34:29.012 Using stored password.
+. 2019-03-02 10:34:29.012 Sent password
+. 2019-03-02 10:34:29.228 Access granted
+. 2019-03-02 10:34:29.228 Opening session as main channel
+. 2019-03-02 10:34:29.431 Opened main channel
+. 2019-03-02 10:34:29.438 Started a shell/command
+. 2019-03-02 10:34:29.438 --------------------------------------------------------------------------
+. 2019-03-02 10:34:29.438 Using SFTP protocol.
+. 2019-03-02 10:34:29.438 Doing startup conversation with host.
+> 2019-03-02 10:34:29.439 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2019-03-02 10:34:29.453 Type: SSH_FXP_VERSION, Size: 150, Number: -1
+. 2019-03-02 10:34:29.453 SFTP version 3 negotiated.
+. 2019-03-02 10:34:29.453 Unknown server extension posix-rename@openssh.com="1"
+. 2019-03-02 10:34:29.453 Supports statvfs@openssh.com extension version "2"
+. 2019-03-02 10:34:29.453 Unknown server extension fstatvfs@openssh.com="2"
+. 2019-03-02 10:34:29.453 Supports hardlink@openssh.com extension version "1"
+. 2019-03-02 10:34:29.453 Unknown server extension fsync@openssh.com="1"
+. 2019-03-02 10:34:29.453 We believe the server has signed timestamps bug
+. 2019-03-02 10:34:29.453 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+. 2019-03-02 10:34:29.453 Limiting packet size to OpenSSH sftp-server limit of 262148 bytes
+. 2019-03-02 10:34:29.453 Getting current directory name.
+. 2019-03-02 10:34:29.453 Getting real path for '.'
+> 2019-03-02 10:34:29.453 Type: SSH_FXP_REALPATH, Size: 10, Number: 16
+< 2019-03-02 10:34:29.457 Type: SSH_FXP_NAME, Size: 37, Number: 16
+. 2019-03-02 10:34:29.457 Real path is '/home/pi'
+. 2019-03-02 10:34:29.457 Startup conversation with host finished.
+< 2019-03-02 10:34:29.458 Script: Active session: [1] pi@10.62.39.12
+> 2019-03-02 10:34:29.458 Script: put ShapeDetectionTest.py"
+. 2019-03-02 10:34:29.458 Copying 1 files/directories to remote directory "/home/pi" - total size: 7,446
+. 2019-03-02 10:34:29.458   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:34:29.458   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:34:29.458   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:34:29.458 Getting real path for '/home/pi'
+> 2019-03-02 10:34:29.458 Type: SSH_FXP_REALPATH, Size: 17, Number: 272
+< 2019-03-02 10:34:29.463 Type: SSH_FXP_NAME, Size: 37, Number: 272
+. 2019-03-02 10:34:29.463 Real path is '/home/pi'
+. 2019-03-02 10:34:29.464 File: 'ShapeDetectionTest.py' [2019-03-02T15:34:24.191Z] [7446]
+. 2019-03-02 10:34:29.464 Copying "ShapeDetectionTest.py" to remote directory started.
+. 2019-03-02 10:34:29.464 Binary transfer mode selected.
+. 2019-03-02 10:34:29.464 Opening remote file.
+> 2019-03-02 10:34:29.464 Type: SSH_FXP_OPEN, Size: 55, Number: 515
+< 2019-03-02 10:34:29.467 Type: SSH_FXP_HANDLE, Size: 13, Number: 515
+> 2019-03-02 10:34:29.467 Type: SSH_FXP_WRITE, Size: 7471, Number: 1030
+> 2019-03-02 10:34:29.468 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+> 2019-03-02 10:34:29.468 Type: SSH_FXP_SETSTAT, Size: 51, Number: 777
+< 2019-03-02 10:34:29.474 Type: SSH_FXP_STATUS, Size: 24, Number: 1030
+< 2019-03-02 10:34:29.474 Status code: 0
+< 2019-03-02 10:34:29.475 Type: SSH_FXP_STATUS, Size: 24, Number: 1284
+< 2019-03-02 10:34:29.475 Status code: 0
+. 2019-03-02 10:34:29.475 Preserving timestamp [2019-03-02T15:34:24.000Z]
+< 2019-03-02 10:34:29.475 Type: SSH_FXP_STATUS, Size: 24, Number: 777
+< 2019-03-02 10:34:29.475 Status code: 0
+. 2019-03-02 10:34:29.475 Transfer done: 'ShapeDetectionTest.py' => '/home/pi/ShapeDetectionTest.py' [7446]
+. 2019-03-02 10:34:29.475 Copying finished: Transferred: 7,446, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:34:29.475 Script: put findshapespipeline.py"
+. 2019-03-02 10:34:29.476 Copying 1 files/directories to remote directory "/home/pi" - total size: 5,893
+. 2019-03-02 10:34:29.476   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:34:29.476   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:34:29.476   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:34:29.476 Getting real path for '/home/pi'
+> 2019-03-02 10:34:29.476 Type: SSH_FXP_REALPATH, Size: 17, Number: 1552
+< 2019-03-02 10:34:29.481 Type: SSH_FXP_NAME, Size: 37, Number: 1552
+. 2019-03-02 10:34:29.481 Real path is '/home/pi'
+. 2019-03-02 10:34:29.482 File: 'findshapespipeline.py' [2019-03-02T00:44:49.172Z] [5893]
+. 2019-03-02 10:34:29.482 Copying "findshapespipeline.py" to remote directory started.
+. 2019-03-02 10:34:29.482 Binary transfer mode selected.
+. 2019-03-02 10:34:29.482 Opening remote file.
+> 2019-03-02 10:34:29.482 Type: SSH_FXP_OPEN, Size: 55, Number: 1795
+< 2019-03-02 10:34:29.485 Type: SSH_FXP_HANDLE, Size: 13, Number: 1795
+> 2019-03-02 10:34:29.486 Type: SSH_FXP_WRITE, Size: 5918, Number: 2310
+> 2019-03-02 10:34:29.486 Type: SSH_FXP_CLOSE, Size: 13, Number: 2564
+> 2019-03-02 10:34:29.486 Type: SSH_FXP_SETSTAT, Size: 51, Number: 2057
+< 2019-03-02 10:34:29.491 Type: SSH_FXP_STATUS, Size: 24, Number: 2310
+< 2019-03-02 10:34:29.491 Status code: 0
+< 2019-03-02 10:34:29.492 Type: SSH_FXP_STATUS, Size: 24, Number: 2564
+< 2019-03-02 10:34:29.492 Status code: 0
+. 2019-03-02 10:34:29.492 Preserving timestamp [2019-03-02T00:44:49.000Z]
+< 2019-03-02 10:34:29.492 Type: SSH_FXP_STATUS, Size: 24, Number: 2057
+< 2019-03-02 10:34:29.492 Status code: 0
+. 2019-03-02 10:34:29.492 Transfer done: 'findshapespipeline.py' => '/home/pi/findshapespipeline.py' [5893]
+. 2019-03-02 10:34:29.492 Copying finished: Transferred: 5,893, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:34:29.493 Script: put ShapeDetector.py"
+. 2019-03-02 10:34:29.493 Copying 1 files/directories to remote directory "/home/pi" - total size: 1,290
+. 2019-03-02 10:34:29.493   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0100; Resume: S (102400); CalcS: No; Mask: 
+. 2019-03-02 10:34:29.493   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; InclM: ; ResumeL: 0
+. 2019-03-02 10:34:29.493   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2019-03-02 10:34:29.493 Getting real path for '/home/pi'
+> 2019-03-02 10:34:29.493 Type: SSH_FXP_REALPATH, Size: 17, Number: 2832
+< 2019-03-02 10:34:29.495 Type: SSH_FXP_NAME, Size: 37, Number: 2832
+. 2019-03-02 10:34:29.495 Real path is '/home/pi'
+. 2019-03-02 10:34:29.495 File: 'ShapeDetector.py' [2019-03-01T01:49:25.294Z] [1290]
+. 2019-03-02 10:34:29.495 Copying "ShapeDetector.py" to remote directory started.
+. 2019-03-02 10:34:29.495 Binary transfer mode selected.
+. 2019-03-02 10:34:29.495 Opening remote file.
+> 2019-03-02 10:34:29.495 Type: SSH_FXP_OPEN, Size: 50, Number: 3075
+< 2019-03-02 10:34:29.498 Type: SSH_FXP_HANDLE, Size: 13, Number: 3075
+> 2019-03-02 10:34:29.499 Type: SSH_FXP_WRITE, Size: 1315, Number: 3590
+> 2019-03-02 10:34:29.499 Type: SSH_FXP_CLOSE, Size: 13, Number: 3844
+> 2019-03-02 10:34:29.499 Type: SSH_FXP_SETSTAT, Size: 46, Number: 3337
+< 2019-03-02 10:34:29.501 Type: SSH_FXP_STATUS, Size: 24, Number: 3590
+< 2019-03-02 10:34:29.501 Status code: 0
+< 2019-03-02 10:34:29.504 Type: SSH_FXP_STATUS, Size: 24, Number: 3844
+< 2019-03-02 10:34:29.504 Status code: 0
+. 2019-03-02 10:34:29.504 Preserving timestamp [2019-03-01T01:49:25.000Z]
+< 2019-03-02 10:34:29.504 Type: SSH_FXP_STATUS, Size: 24, Number: 3337
+< 2019-03-02 10:34:29.504 Status code: 0
+. 2019-03-02 10:34:29.504 Transfer done: 'ShapeDetector.py' => '/home/pi/ShapeDetector.py' [1290]
+. 2019-03-02 10:34:29.504 Copying finished: Transferred: 1,290, Elapsed: 0:00:00, CPS: 0/s
+> 2019-03-02 10:34:29.505 Script: exit
+. 2019-03-02 10:34:29.505 Script: Exit code: 0
+. 2019-03-02 10:34:29.505 Closing connection.
+. 2019-03-02 10:34:29.505 Sending special code: 12
+. 2019-03-02 10:34:29.505 Sent EOF message

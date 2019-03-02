@@ -11,8 +11,6 @@ title Deploy Python code to Raspberry Pi
     "put "ShapeDetector.py"" ^
 	"exit"
 
-putty -ssh pi@10.62.39.12 -pw raspberry -m puttyCommands.txt
-
 set WINSCP_RESULT=%ERRORLEVEL%
 if %WINSCP_RESULT% equ 0 (
   echo Success
@@ -22,3 +20,6 @@ if %WINSCP_RESULT% equ 0 (
 echo Done
 
 exit /b %WINSCP_RESULT%
+
+putty -ssh pi@10.62.39.12 -pw raspberry -m puttyCommands.txt
+

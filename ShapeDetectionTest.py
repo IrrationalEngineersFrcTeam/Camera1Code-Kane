@@ -11,6 +11,7 @@ from ShapeDetector import ShapeDetector
 grip = GripPipeline()
 #cap = cv2.VideoCapture("http://10.62.39.96:1181/stream.mjpg")
 
+
 class Driver:
 
     singleImg = True
@@ -27,12 +28,12 @@ class Driver:
 
         #set up camera stream
         self.cap = cv2.VideoCapture("http://10.62.39.12:1181/stream.mjpg")
+        #self.cap = cv2.VideoCapture(0)
 
         #start the logging and set the level
-        logging.basicConfig(level=logging.DEBUG)
 
         #set up Network Tables
-        self.rp = NetworkTables.getTable("RaspberryPi")
+        self.rp = NetworkTables.getTable("Camera1")
         self.shapeDetect = ShapeDetector()
         NetworkTables.initialize(server='10.62.39.2')
 
@@ -59,18 +60,20 @@ class Driver:
 
     def drawRectangleBetter(self, img, cnt):
 
-        #get the height and width of the image
-        height, width, _ = img.shape
-
         #compute the bounding rectangle and get x, y, width and height variables of the rectangle
         (x,y,w,h) = cv2.boundingRect(cnt)
         cv2.rectangle(img, (x,y), (x+w,y+h), (255, 0, 0), 2)
-        cv2.circle(img, (int(x+(w/2)), int(y+(h/2))), 10, (0, 255, 0))
+
+        cX = int(x+(w/2))
+        cY = int(y+(h/2))
+
+        cv2.circle(img, (cX, cY), 10, (0, 255, 0))
+        return cX, cY
 
     def runSingleImg(self):
 
         self.frame = cv2.imread("shotSmall.jpg")
-        resized = imutils.resize(self.frame, width=480)
+        resized = imutils.resize(self.frame, width=320)
         ratio = self.frame.shape[0] / float(resized.shape[0])
         self.contoursImg = resized.copy()
         grip.process(self.contoursImg)
@@ -90,7 +93,7 @@ class Driver:
 
         for contour in grip.filter_contours_output:
             shape = self.shapeDetect.detect(contour)
-            print(shape)
+            #print(shape)
             M = cv2.moments(contour)
             
             if shape == "rectangle":
@@ -113,7 +116,7 @@ class Driver:
         while True:
             try:
                 ret, self.frame = self.cap.read()
-                resized = imutils.resize(self.frame, width=480)
+                resized = imutils.resize(self.frame, width=640, height=480)
                 ratio = self.frame.shape[0] / float(resized.shape[0])
                 self.contoursImg = resized.copy()
                 grip.process(self.contoursImg)
@@ -132,26 +135,44 @@ class Driver:
                 num = 0
                 if grip.filter_contours_output is None:
                     raise ValueError
+
+                self.centers = np.zeros([int(len(grip.filter_contours_output)), 2])
+
                 for contour in grip.filter_contours_output:
                     shape = self.shapeDetect.detect(contour)
                     #TODO make sure this works \/
-                    print(len(grip.filter_contours_output))
-                    self.centers = np.zeros([int(len(grip.filter_contours_output)), 2])
-                    print(shape)
+                    #print(len(grip.filter_contours_output))
+                    #print(shape)
                     M = cv2.moments(contour)
                     
                     if shape == "rectangle":
-                        cX = int((M["m10"] / M["m00"]) * ratio)
-                        cY = int((M["m01"] / M["m00"]) * ratio)
+                        cX, cY = self.drawRectangleBetter(self.shapeImg, contour)
+                        #cX = int((M["m10"] / M["m00"]) * ratio)
+                        #cY = int((M["m01"] / M["m00"]) * ratio)
                         self.centers[num, 0] = cX
                         self.centers[num, 1] = cY
                         print(num, self.centers[num])
-                        self.drawRectangleBetter(self.shapeImg, contour)
-                    num += 1
+                        num += 1
+
+                try:
+                    centerXPos = self.centers[0, 0] + ((self.centers[1, 0] - self.centers[0, 0]) / 2)
+                    centerYPos = int(self.centers[0, 1])
+                    print(str(centerXPos) + " " + str(centerYPos))
+
+                    cv2.circle(self.shapeImg, (int(centerXPos), centerYPos), 10, (0, 0, 255))
+
+                    centerXPos = int(np.interp(centerXPos, [0, 640], [-100, 100]))
+
+                    self.rp.putNumber("distance", centerXPos)
+
+                except IndexError:
+                    print("something went wrong")
 
                 cv2.imshow("shapes", self.shapeImg)
                 #cv2.waitKey(0)
-            
+
+                #print(self.centers[0, 0])e
+
                 if cv2.waitKey(1) & 0xFF == ord(' '):
                     break
 
@@ -164,8 +185,4 @@ class Driver:
 if __name__ == "__main__":
     driver = Driver()
     driver.runCameraStream()
-
-    """if True:
-        driver.runSingleImg()
-    else:
-        driver.runCameraStream()"""
+        
