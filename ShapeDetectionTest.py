@@ -25,6 +25,7 @@ class Driver:
         self.centers = None                                                                                                     
         self.frame = None
         self.contoursImg = None
+        self.isSeen = None
 
         #set up camera stream
         self.cap = cv2.VideoCapture("http://10.62.39.12:1181/stream.mjpg")
@@ -140,15 +141,11 @@ class Driver:
 
                 for contour in grip.filter_contours_output:
                     shape = self.shapeDetect.detect(contour)
-                    #TODO make sure this works \/
                     #print(len(grip.filter_contours_output))
                     #print(shape)
-                    M = cv2.moments(contour)
                     
                     if shape == "rectangle":
                         cX, cY = self.drawRectangleBetter(self.shapeImg, contour)
-                        #cX = int((M["m10"] / M["m00"]) * ratio)
-                        #cY = int((M["m01"] / M["m00"]) * ratio)
                         self.centers[num, 0] = cX
                         self.centers[num, 1] = cY
                         print(num, self.centers[num])
@@ -156,22 +153,25 @@ class Driver:
 
                 try:
                     centerXPos = self.centers[0, 0] + ((self.centers[1, 0] - self.centers[0, 0]) / 2)
-                    centerYPos = int(self.centers[0, 1])
-                    print(str(centerXPos) + " " + str(centerYPos))
+                    centerYPos = int(self.centers[1, 1] + ((self.centers[0, 1] - self.centers[1, 1]) / 2))
 
                     cv2.circle(self.shapeImg, (int(centerXPos), centerYPos), 10, (0, 0, 255))
 
                     centerXPos = int(np.interp(centerXPos, [0, 640], [-100, 100]))
 
+                    print(str(centerXPos) + " " + str(centerYPos))
+                    self.isSeen = True
+
+                    self.rp.putBoolean("isSeen", self.isSeen)
                     self.rp.putNumber("distance", centerXPos)
 
                 except IndexError:
                     print("something went wrong")
+                    self.isSeen = False
 
                 cv2.imshow("shapes", self.shapeImg)
+                print(self.isSeen)
                 #cv2.waitKey(0)
-
-                #print(self.centers[0, 0])e
 
                 if cv2.waitKey(1) & 0xFF == ord(' '):
                     break
