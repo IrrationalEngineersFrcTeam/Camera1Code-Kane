@@ -148,7 +148,7 @@ class Driver:
                         cX, cY = self.drawRectangleBetter(self.shapeImg, contour)
                         self.centers[num, 0] = cX
                         self.centers[num, 1] = cY
-                        print(num, self.centers[num])
+                        #print(num, self.centers[num])
                         num += 1
 
                 try:
@@ -159,7 +159,7 @@ class Driver:
 
                     centerXPos = int(np.interp(centerXPos, [0, 640], [-100, 100]))
 
-                    print(str(centerXPos) + " " + str(centerYPos))
+                    #print(str(centerXPos) + " " + str(centerYPos))
                     self.isSeen = True
 
                     self.rp.putBoolean("isSeen", self.isSeen)
@@ -170,7 +170,7 @@ class Driver:
                     self.isSeen = False
 
                 cv2.imshow("shapes", self.shapeImg)
-                print(self.isSeen)
+                #print(self.isSeen)
                 #cv2.waitKey(0)
 
                 if cv2.waitKey(1) & 0xFF == ord(' '):
