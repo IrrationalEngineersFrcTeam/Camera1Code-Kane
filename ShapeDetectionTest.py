@@ -7,8 +7,16 @@ import imutils
 
 from findshapespipeline import GripPipeline
 from ShapeDetector import ShapeDetector
+from PID import PID
 
 grip = GripPipeline()
+
+# initial working pid values
+# P: 0.001
+# I: 0
+# D: 0
+
+pid = PID(0.001, 0.0001, 0)
 #cap = cv2.VideoCapture("http://10.62.39.96:1181/stream.mjpg")
 
 
@@ -74,7 +82,7 @@ class Driver:
     def runSingleImg(self):
 
         self.frame = cv2.imread("shotSmall.jpg")
-        resized = imutils.resize(self.frame, width=320)
+        resized = imutils.resize(self.frame, width=320, inter=cv2.INTER_CUBIC)
         ratio = self.frame.shape[0] / float(resized.shape[0])
         self.contoursImg = resized.copy()
         grip.process(self.contoursImg)
@@ -104,7 +112,9 @@ class Driver:
                 self.centers[num, 1] = cY
                 print(num, self.centers[num])
                 self.drawRectangleBetter(self.shapeImg, contour)
-            num += 1
+                num += 1
+                if num == 2:
+                    break
 
         cv2.imshow("shapes", self.shapeImg)
         cv2.waitKey(0)
@@ -114,10 +124,11 @@ class Driver:
         break
     """
     def runCameraStream(self):
+        i = 0
         while True:
             try:
                 ret, self.frame = self.cap.read()
-                resized = imutils.resize(self.frame, width=640, height=480)
+                resized = imutils.resize(self.frame, width=640, height=480, inter=cv2.INTER_CUBIC)
                 ratio = self.frame.shape[0] / float(resized.shape[0])
                 self.contoursImg = resized.copy()
                 grip.process(self.contoursImg)
@@ -162,27 +173,34 @@ class Driver:
                     #print(str(centerXPos) + " " + str(centerYPos))
                     self.isSeen = True
 
+                    speed = -pid.calculateSpeed(centerXPos)
                     self.rp.putBoolean("isSeen", self.isSeen)
-                    self.rp.putNumber("distance", centerXPos)
+
+                    
+                    self.rp.putNumber("distance", speed)
+                    #i = 0
+                    print(speed)
+                    #i += 1
 
                 except IndexError:
                     print("something went wrong")
                     self.isSeen = False
 
+                cv2.circle(self.shapeImg, (int(640/2), int(480/2)), 5, (0, 0, 255))
+                
                 cv2.imshow("shapes", self.shapeImg)
                 #print(self.isSeen)
                 #cv2.waitKey(0)
 
-                if cv2.waitKey(1) & 0xFF == ord(' '):
+                if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
 
             except ValueError:
                 print("Filter contours empty")
-                if cv2.waitKey(1) & 0xFF == ord(' '):
+                if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
     
 
 if __name__ == "__main__":
     driver = Driver()
     driver.runCameraStream()
-        
