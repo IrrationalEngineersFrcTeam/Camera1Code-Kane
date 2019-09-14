@@ -1,3 +1,4 @@
+
 import cv2
 import numpy as np
 from networktables import NetworkTables
@@ -16,7 +17,7 @@ grip = GripPipeline()
 # I: 0
 # D: 0
 
-pid = PID(0.001, 0.0001, 0)
+pid = PID(0.001, 0.001, 0)
 #cap = cv2.VideoCapture("http://10.62.39.96:1181/stream.mjpg")
 
 
@@ -34,9 +35,14 @@ class Driver:
         self.frame = None
         self.contoursImg = None
         self.isSeen = None
+        
 
         #set up camera stream
-        self.cap = cv2.VideoCapture("http://10.62.39.12:1181/stream.mjpg")
+        self.cap = cv2.VideoCapture("http://10.62.39.55:1181/stream.mjpg")
+        
+        #Practice IP: 10.62.39.55
+        #Competition IP: 10.62.39.12
+        
         #self.cap = cv2.VideoCapture(0)
 
         #start the logging and set the level
@@ -132,6 +138,7 @@ class Driver:
                 ratio = self.frame.shape[0] / float(resized.shape[0])
                 self.contoursImg = resized.copy()
                 grip.process(self.contoursImg)
+                print("test")
                 #cv2.imshow("thresh", grip.hsv_threshold_output)
 
                 self.shapeImg = self.contoursImg.copy()
@@ -139,6 +146,7 @@ class Driver:
                 #circleXCenter = self.drawRectangle(grip.filter_contours_output, grip.contour_hierarchy, self.contoursImg)
 
                 cv2.imshow("rectangle", self.contoursImg)
+                
                 cv2.imshow("thresh", grip.hsv_threshold_output)
 
                 #circleXCenter = (circleXCenter - 320) / 3.2
@@ -177,9 +185,9 @@ class Driver:
                     self.rp.putBoolean("isSeen", self.isSeen)
 
                     
-                    self.rp.putNumber("distance", speed)
+                    self.rp.putNumber("distance", -speed)
                     #i = 0
-                    print(speed)
+                    print(-speed)
                     #i += 1
 
                 except IndexError:

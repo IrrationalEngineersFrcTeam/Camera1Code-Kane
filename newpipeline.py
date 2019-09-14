@@ -11,7 +11,7 @@ class GripPipeline:
     def __init__(self):
         """initializes all values to presets or None if need to be set
         """
-        #TODO change values to work with vision tape
+
         self.__hsv_threshold_hue = [33.99280575539568, 106.27986348122869]
         self.__hsv_threshold_saturation = [0.0, 255.0]
         self.__hsv_threshold_value = [192.62589928057554, 255.0]
@@ -38,7 +38,6 @@ class GripPipeline:
 
         self.filter_contours_output = None
 
-        self.contour_hierarchy = None
 
     def process(self, source0):
         """
@@ -50,7 +49,7 @@ class GripPipeline:
 
         # Step Find_Contours0:
         self.__find_contours_input = self.hsv_threshold_output
-        (self.find_contours_output, self.contour_hierarchy) = self.__find_contours(self.__find_contours_input, self.__find_contours_external_only)
+        (self.find_contours_output) = self.__find_contours(self.__find_contours_input, self.__find_contours_external_only)
 
         # Step Filter_Contours0:
         self.__filter_contours_contours = self.find_contours_output
@@ -85,8 +84,8 @@ class GripPipeline:
         else:
             mode = cv2.RETR_LIST
         method = cv2.CHAIN_APPROX_SIMPLE
-        contours, hierarchy =cv2.findContours(input, mode=mode, method=method)
-        return contours, hierarchy
+        im2, contours, hierarchy =cv2.findContours(input, mode=mode, method=method)
+        return contours
 
     @staticmethod
     def __filter_contours(input_contours, min_area, min_perimeter, min_width, max_width,
@@ -132,3 +131,6 @@ class GripPipeline:
                 continue
             output.append(contour)
         return output
+
+
+

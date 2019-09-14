@@ -1,7 +1,7 @@
 <grip:Pipeline>
   <sources>
     <grip:Camera>
-      <property name="address" value="http://10.62.39.12:1181/stream.mjpg"/>
+      <property name="address" value="http://10.62.39.55:1181/stream.mjpg"/>
     </grip:Camera>
   </sources>
   <steps>
@@ -9,19 +9,19 @@
       <grip:Input step="0" socket="0"/>
       <grip:Input step="0" socket="1">
         <value>
-          <double>0.0</double>
-          <double>126.24573378839591</double>
+          <double>33.99280575539568</double>
+          <double>106.27986348122869</double>
         </value>
       </grip:Input>
       <grip:Input step="0" socket="2">
         <value>
           <double>0.0</double>
-          <double>48.30204778156996</double>
+          <double>255.0</double>
         </value>
       </grip:Input>
       <grip:Input step="0" socket="3">
         <value>
-          <double>237.57194244604312</double>
+          <double>192.62589928057554</double>
           <double>255.0</double>
         </value>
       </grip:Input>
@@ -37,7 +37,7 @@
     <grip:Step name="Filter Contours">
       <grip:Input step="2" socket="0"/>
       <grip:Input step="2" socket="1">
-        <value>700.0</value>
+        <value>500.0</value>
       </grip:Input>
       <grip:Input step="2" socket="2">
         <value>0.0</value>
@@ -77,12 +77,12 @@
   </steps>
   <connections>
     <grip:Connection>
-      <grip:Output step="1" socket="0" previewed="true"/>
-      <grip:Input step="2" socket="0"/>
-    </grip:Connection>
-    <grip:Connection>
       <grip:Output step="0" socket="0" previewed="true"/>
       <grip:Input step="1" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="1" socket="0" previewed="true"/>
+      <grip:Input step="2" socket="0"/>
     </grip:Connection>
     <grip:Connection>
       <grip:Output source="0" socket="0" previewed="false"/>
@@ -102,8 +102,8 @@
     <language>Python</language>
     <className>GripPipeline</className>
     <implementWpilibPipeline>false</implementWpilibPipeline>
-    <saveDir>D:\Users\kthsd2\Documents\Robotics\Vision\Camera1Code-Kane</saveDir>
+    <saveDir>C:\Users\drive\OneDrive\Documents\Camera1Code-Kane</saveDir>
     <packageName>grip</packageName>
-    <moduleName>newpipline</moduleName>
+    <moduleName>newpipeline</moduleName>
   </codeGenerationSettings>
 </grip:Pipeline>
